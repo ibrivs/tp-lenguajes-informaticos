@@ -7,7 +7,10 @@
 </head>
 <body>
     <header>
-        <nav>
+        <h1> Te damos la bienvenida a ... </h1>
+        <p> <strong>Resolvemos tus dudas, desde 1993.</strong></p> <!-- falta nombre de la ciudad. -->
+        
+        <nav aria-label="nav principal">
             <ul>
                 <li>
                     <a href="#inicio">inicio</a>
@@ -23,12 +26,23 @@
                 </li>
             </ul>
         </nav>
-        <h1> Te damos la bienvenida a ... </h1>
-        <h2> Resolvemos tus dudas, desde 1993.</h2> <!-- falta nombre de la ciudad. -->
+
     </header>
+
     <main id="inicio">        
-        <div>
-            <h3>¿Qué buscabas?</h3>
+        <section>
+            <h2> Un poco de nuestra historia...</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Amet sit vero quisquam aperiam. Debitis, sequi soluta architecto 
+                nisi exercitationem officia totam animi nesciunt, dignissimos natus aliquid adipisci! 
+                Quos, tempora mollitia!
+            </p>
+            <a href="./ciudad.html">Leer más...</a>
+        </section>
+
+        <section>
+            <h2>¿Qué buscabas?</h2>
             <ul>
                 <li>
                     <a href="./lugares.html">Lugares Turisticos.</a>
@@ -43,34 +57,28 @@
                     <a href="#consultas">Tramites y Servicios.</a>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <h3> Un poco de nuestra historia...</h3>
-        <div>
-            <a href="./ciudad.html">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Quae facere cumque modi quaerat aperiam. Distinctio provident, reprehenderit doloremque, 
-                molestiae voluptates atque saepe nemo veniam sapiente, adipisci suscipit ea. Minus, quisquam.</a>
-        </div>
-
-        <div>
-            <h3> Nuestros lugares...</h3>
-            <ul>
-                <li>
-                    <img src="https://picsum.photos/200" alt="Paisaje1">
-                </li>
-                <li>
-                    <img src="https://picsum.photos/200" alt="Paisaje2">
-                </li>
-                <li>
-                    <img src="https://picsum.photos/200" alt="Paisaje3">
-                </li>
-            </ul>
+        <section id="lugares">
+            <h2> Nuestros lugares...</h2>
+            <figure>
+                <img src="https://picsum.photos/200" alt="Paisaje1"> <!-- poner imagenes de verdad y arreglar el alt-->
+                <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/200" alt="Paisaje1">
+                <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/200" alt="Paisaje1">
+                <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
+            </figure>
             <a href="./lugares.html"><strong>Visitar más...</strong></a>
-        </div>
+        </section>
 
-        <div id="consultas">
-            <h3>Consultas frecuentes...</h3>
-            <ol>
+        <section id="consultas">
+            <h2>Consultas frecuentes...</h2>
+            <ul>
                 <li>
                     <a href="./tramites/ciudadania.html">Actualizacion de Ciudadania</a>
                 </li>
@@ -83,42 +91,53 @@
                 <li>
                     <p>¿Tú duda es otra? <a href="./contacto.html">¡Contactanos!</a></p>
                 </li>
-            </ol>
-        </div>
-
-        <div>
-            <h3>Siempre tenemos un lugar... ¡Formá parte de nuestro equipo!</h3>
-            <a href="./tramites/servicios.html"><img src="./images/unite.jpg" alt="Nosotros"></a>
-        </div>
-        
-        <div id="noticias">
-            <h3> Ultimas Noticias.</h3>
-            <ul>
-                <li>
-                    <img src="https://picsum.photos/200" alt="Noticia1">
-                </li>
-                <li>
-                    <img src="https://picsum.photos/200" alt="Noticia2">
-                </li>
-                <li>
-                    <img src="https://picsum.photos/200" alt="Noticia3">
-                </li>
             </ul>
-        </div>
+        </section>
+
+        <section>
+            <a href="./tramites/servicios.html">
+                <h2>Siempre tenemos un lugar... ¡Formá parte de nuestro equipo!</h2>
+                <img src="./images/unite.jpg" alt="Nosotros">
+            </a>
+        </section>
+        
+        <section id="noticias">
+            <h2> Ultimas Noticias.</h2>
+            <article>
+                <img src="https://picsum.photos/200" alt="noticia 1">
+                <h3>Movimiento noticiario: un corte de luz.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
+                <a href="./noticias/corte-centro.html">Leer más...</a>
+            </article>
+            <article>
+                <img src="https://picsum.photos/200" alt="noticia 2">
+                <h3>Movimiento noticiario: un corte de luz.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
+                <a href="./noticias/corte-centro.html">Leer más...</a>
+            </article>
+            <article>
+                <img src="https://picsum.photos/200" alt="noticia 3">
+                <h3>Movimiento noticiario: un corte de luz.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
+                <a href="./noticias/corte-centro.html">Leer más...</a>
+            </article>
+        </section>
     </main>
     <footer>
-        <p>Por si queres visitar más...</p>
-        <ul>
-            <li>
-                <a href="./ciudad.html">Historia</a>
-            </li>
-            <li>
-                <a href="./lugares.html">Lugares Turisticos</a>
-            </li>
-            <li>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
+        <nav aria-label="nav footer">
+            <p>Por si queres visitar más...</p>
+            <ul>
+                <li>
+                    <a href="./ciudad.html">Historia</a>
+                </li>
+                <li>
+                    <a href="./lugares.html">Lugares Turisticos</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
