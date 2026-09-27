@@ -3,15 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - HalloweenTown</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <nav aria-label="nav-principal">
+        <img src="./images/logo.png" alt="halloweentown" id="logo">
+        <ul>
+            <li>
+                <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="./ciudad.html">Historia</a>
+            </li>
+            <li>
+                <a href="./lugares.html">Lugares Turisticos</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a href="./index.html#nav-pagina">Buscar Aquí</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="cuerpo">
+        <header>
+            <h1>Atención al Ciudadano y Espectro</h1>
+            <p>Resolvemos tus dudas paranormales <strong>desde 1983</strong>.</p>
+        </header>
+
+        <main id="contacto">
+            <section id="formulario-contacto">
+                <h2>Envianos tu mensaje o aparecida</h2>
+                <p>Completá el formulario para comunicarte con la Municipalidad de HalloweenTown.</p>
+
+                <!-- Formulario de contacto con validación HTML5 -->
+                <form action="#" method="post">
+                    <div>
+                        <label for="nombre">Nombre o Pseudónimo Fantasma:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Jack Skellington" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Correo o Frecuencia Espectral:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@halloweentown.gob" required>
+                    </div>
+
+                    <div>
+                        <label for="asunto">Motivo de consulta:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Seleccioná una opción...</option>
+                            <option value="tramites">Trámites y Ciudadanía Espeluznante</option>
+                            <option value="turismo">Consultas sobre Lugares Turísticos</option>
+                            <option value="reporte">Reportar actividad extraña / Avistamiento</option>
+                            <option value="empleo">Unirse al equipo municipal</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Mensaje o Manifestación:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar al Más Allá</button>
+                </form>
+            </section>
+
+            <aside id="info-contacto">
+                <h2>Canales Directos de HalloweenTown</h2>
+                <ul>
+                    <li><strong>Teléfono Embrujado:</strong> <a href="tel:+54116660000">+54 11 666-0000</a></li>
+                    <li><strong>Correo Oficial:</strong> <a href="mailto:info@halloweentown.gob">info@halloweentown.gob</a></li>
+                    <li><strong>Atención Presencial:</strong> Plaza de la Calabaza N° 13 (Horario Nocturno)</li>
+                </ul>
+            </aside>
+        </main>
+    </div>
+
+    <footer>
+        <nav aria-label="nav footer">
+            <p>Por si querés visitar más...</p>
             <ul>
-                <li>
-                    <a href="#inicio">inicio</a>
-                </li>
                 <li>
                     <a href="./ciudad.html">Historia</a>
                 </li>
@@ -23,21 +106,9 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        <ul>
-            <li>
-                <a href="./ciudad.html">Historia</a>
-            </li>
-            <li>
-                <a href="./lugares.html">Lugares Turisticos</a>
-            </li>
-            <li>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </footer></body>
+        <address>
+            <p>&copy; 1983 - 2026 Municipalidad de HalloweenTown. Todos los derechos reservados.</p>
+        </address>
+    </footer>
+</body>
 </html>
