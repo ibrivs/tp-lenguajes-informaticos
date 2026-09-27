@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "CoralineFont";
+    src: url("../fuentes/Coraline.ttf");
+}
+.griffy-regular {
+  font-family: "Griffy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.coral-pixels-regular {
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --color-uno: #3b3bb4;
+    --color-dos: #dae9e8;
+    --color-tres: #0c0d11;
+    --color-cuatro: #556661; 
+    --color-texto:#eeeeee ;
+    --color-texto-secundario: #000000;
+    --fuente-titulo: "CoralineFont";
+    --fuente: "Griffy";
+    --fuente-extra: "Coral Pixels";
+
+    --ancho-imagen: 30rem;
+    --alto-imagen: 18rem;
+    --radio-imagen: 8px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fuente);
+    background-color: var(--color-tres);
+    color: var(--color-texto);
+}
+header{
+    text-align: center;
+
+    padding: 12vh;
+    margin: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-texto-secundario);
+}
+a:hover{
+    color: var(--color-texto-secundario);
+}
+
+h1{
+    font-family: var(--fuente-titulo);
+}
+strong{
+    font-family: var(--fuente-extra);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-uno);
+    width: 100%;
+}
+nav img{
+    width: 8vh;
+    height: 7vh;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border: 0;
+    margin: 0;
+}
+nav a{
+    color: var(--color-texto);
+    padding: 2vh 8vh;
+}
+nav li:hover{
+    background-color: var(--color-dos);
+}
+
+main{
+    background-color: var(--color-cuatro);
+    color: var(--color-texto-secundario);
+    padding: 5vh 8vh;
+}
+
+#cuerpo{
+    max-width: 100vh;
+    margin: 0 auto;
+}

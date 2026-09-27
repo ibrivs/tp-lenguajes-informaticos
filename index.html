@@ -4,125 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciudad</title> <!-- falta nombre de la ciudad -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header>
-        <h1> Te damos la bienvenida a ... </h1>
-        <p> <strong>Resolvemos tus dudas, desde 1993.</strong></p> <!-- falta nombre de la ciudad. -->
-        
-        <nav aria-label="nav principal">
-            <ul>
-                <li>
-                    <a href="#inicio">inicio</a>
-                </li>
-                <li>
-                    <a href="./ciudad.html">Historia</a>
-                </li>
-                <li>
-                    <a href="./lugares.html">Lugares Turisticos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <main id="inicio">        
-        <section>
-            <h2> Un poco de nuestra historia...</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Amet sit vero quisquam aperiam. Debitis, sequi soluta architecto 
-                nisi exercitationem officia totam animi nesciunt, dignissimos natus aliquid adipisci! 
-                Quos, tempora mollitia!
-            </p>
-            <a href="./ciudad.html">Leer más...</a>
-        </section>
-
-        <section>
-            <h2>¿Qué buscabas?</h2>
-            <ul>
-                <li>
-                    <a href="./lugares.html">Lugares Turisticos.</a>
-                </li>
-                <li>
-                    <a href="./ciudad.html">Nuestra historia.</a>
-                </li>
-                <li>
-                    <a href="#noticias">Noticias.</a>
-                </li>
-                <li>
-                    <a href="#consultas">Tramites y Servicios.</a>
-                </li>
-            </ul>
-        </section>
-
-        <section id="lugares">
-            <h2> Nuestros lugares...</h2>
-            <figure>
-                <img src="https://picsum.photos/200" alt="Paisaje1"> <!-- poner imagenes de verdad y arreglar el alt-->
-                <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
-            </figure>
-            <figure>
-                <img src="https://picsum.photos/200" alt="Paisaje1">
-                <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
-            </figure>
-            <figure>
-                <img src="https://picsum.photos/200" alt="Paisaje1">
-                <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
-            </figure>
-            <a href="./lugares.html"><strong>Visitar más...</strong></a>
-        </section>
-
-        <section id="consultas">
-            <h2>Consultas frecuentes...</h2>
-            <ul>
-                <li>
-                    <a href="./tramites/ciudadania.html">Actualizacion de Ciudadania</a>
-                </li>
-                <li>
-                    <a href="./tramites/banco.html">Consulta al banco.</a>
-                </li>
-                <li>
-                    <a href="./tramites/servicios.html">Consulta de Servicios.</a>
-                </li>
-                <li>
-                    <p>¿Tú duda es otra? <a href="./contacto.html">¡Contactanos!</a></p>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <a href="./tramites/servicios.html">
-                <h2>Siempre tenemos un lugar... ¡Formá parte de nuestro equipo!</h2>
-                <img src="./images/unite.jpg" alt="Nosotros">
-            </a>
-        </section>
-        
-        <section id="noticias">
-            <h2> Ultimas Noticias.</h2>
-            <article>
-                <img src="https://picsum.photos/200" alt="noticia 1">
-                <h3>Movimiento noticiario: un corte de luz.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
-                <a href="./noticias/corte-centro.html">Leer más...</a>
-            </article>
-            <article>
-                <img src="https://picsum.photos/200" alt="noticia 2">
-                <h3>Movimiento noticiario: un corte de luz.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
-                <a href="./noticias/corte-centro.html">Leer más...</a>
-            </article>
-            <article>
-                <img src="https://picsum.photos/200" alt="noticia 3">
-                <h3>Movimiento noticiario: un corte de luz.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
-                <a href="./noticias/corte-centro.html">Leer más...</a>
-            </article>
-        </section>
-    </main>
+    <nav aria-label="nav-principal">
+        <img src="./images/logo.png" alt="halloweentown" id="logo">
+        <ul>
+            <li>
+                <a href="#inicio">inicio</a>
+            </li>
+            <li>
+                <a href="./ciudad.html">Historia</a>
+            </li>
+            <li>
+                <a href="./lugares.html">Lugares Turisticos</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a href="#nav-pagina">Buscar Aquí</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="cuerpo">
+        <header>
+    
+            <h1> Te damos la bienvenida a HallowennTown </h1>
+            <p> Resolvemos tus dudas <strong>desde 1983</strong>.</p> <!-- falta nombre de la ciudad. -->
+            
+        </header>
+    
+        <main id="inicio">        
+            <section id="historia">
+                <h2> Un poco de nuestra historia...</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Amet sit vero quisquam aperiam. Debitis, sequi soluta architecto 
+                    nisi exercitationem officia totam animi nesciunt, dignissimos natus aliquid adipisci! 
+                    Quos, tempora mollitia!
+                </p>
+                <a href="./ciudad.html">Leer más...</a>
+            </section>
+    
+            <section id="Buscar">
+                <h2>¿Qué buscabas?</h2>
+                <ul>
+                    <li>
+                        <a href="./lugares.html">Lugares Turisticos.</a>
+                    </li>
+                    <li>
+                        <a href="./ciudad.html">Nuestra historia.</a>
+                    </li>
+                    <li>
+                        <a href="#noticias">Noticias.</a>
+                    </li>
+                    <li>
+                        <a href="#consultas">Tramites y Servicios.</a>
+                    </li>
+                </ul>
+            </section>
+    
+            <section id="lugares">
+                <h2> Nuestros lugares...</h2>
+                <figure>
+                    <img src="https://picsum.photos/200" alt="Paisaje1"> <!-- poner imagenes de verdad y arreglar el alt-->
+                    <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200" alt="Paisaje1">
+                    <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200" alt="Paisaje1">
+                    <figcaption><a href="./lugares.html">Un paisaje.</a></figcaption>
+                </figure>
+                <a href="./lugares.html"><strong>Visitar más...</strong></a>
+            </section>
+    
+            <section id="consultas">
+                <h2>Consultas frecuentes...</h2>
+                <ul>
+                    <li>
+                        <a href="./tramites/ciudadania.html">Actualizacion de Ciudadania</a>
+                    </li>
+                    <li>
+                        <a href="./tramites/banco.html">Consulta al banco.</a>
+                    </li>
+                    <li>
+                        <a href="./tramites/servicios.html">Consulta de Servicios.</a>
+                    </li>
+                    <li>
+                        <p>¿Tú duda es otra? <a href="./contacto.html">¡Contactanos!</a></p>
+                    </li>
+                </ul>
+            </section>
+    
+            <section id="trabaja">
+                <a href="./tramites/servicios.html">
+                    <h2>Siempre tenemos un lugar... ¡Formá parte de nuestro equipo!</h2>
+                    <img src="./images/unite.jpg" alt="Nosotros">
+                </a>
+            </section>
+            
+            <section id="noticias">
+                <h2> Ultimas Noticias.</h2>
+                <article>
+                    <img src="https://picsum.photos/200" alt="noticia 1">
+                    <h3>Movimiento noticiario: un corte de luz.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
+                    <a href="./noticias/corte-centro.html">Leer más...</a>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/200" alt="noticia 2">
+                    <h3>Movimiento noticiario: un corte de luz.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
+                    <a href="./noticias/corte-centro.html">Leer más...</a>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/200" alt="noticia 3">
+                    <h3>Movimiento noticiario: un corte de luz.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio...</p>
+                    <a href="./noticias/corte-centro.html">Leer más...</a>
+                </article>
+            </section>
+        </main>
+    </div>
     <footer>
         <nav aria-label="nav footer">
             <p>Por si queres visitar más...</p>
