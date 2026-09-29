@@ -1,6 +1,10 @@
 @font-face {
-    font-family: "CoralineFont";
-    src: url("../fuentes/Coraline.ttf");
+    font-family: "Coraline";
+    src: url(../fuentes/Coraline.ttf);
+}
+@font-face {
+    font-family: "October";
+    src: url(../fuentes/October.ttf);
 }
 .griffy-regular {
   font-family: "Griffy", system-ui;
@@ -20,13 +24,13 @@
     --color-cuatro: #556661; 
     --color-texto:#eeeeee ;
     --color-texto-secundario: #000000;
-    --fuente-titulo: "CoralineFont";
+    --fuente-titulo: "Coraline";
+    --fuente-subtitulo: "October";
     --fuente: "Griffy";
     --fuente-extra: "Coral Pixels";
-
+    
     --ancho-imagen: 30rem;
-    --alto-imagen: 18rem;
-    --radio-imagen: 8px;
+    --alto-imagen: 15rem;
 }
 * {
     box-sizing: border-box;
@@ -34,19 +38,16 @@
     padding: 0;
 }
 
+/*body y generales*/
 body{
     font-family: var(--fuente);
     background-color: var(--color-tres);
     color: var(--color-texto);
 }
-header{
-    text-align: center;
-
-    padding: 12vh;
-    margin: 0;
-    border: 0;
+img{
+    width: var(--ancho-imagen);
+    height: var(--alto-imagen);
 }
-
 a{
     text-decoration: none;
     color: var(--color-texto-secundario);
@@ -62,42 +63,66 @@ strong{
     font-family: var(--fuente-extra);
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--color-uno);
-    width: 100%;
-}
-nav img{
-    width: 8vh;
-    height: 7vh;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around;
-}
-nav li{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    border: 0;
+/*cuerpo general*/
+header{
+    text-align: center;    
+    padding: 8rem 0;
     margin: 0;
+    border: 0;
 }
-nav a{
-    color: var(--color-texto);
-    padding: 2vh 8vh;
-}
-nav li:hover{
-    background-color: var(--color-dos);
-}
-
 main{
     background-color: var(--color-cuatro);
     color: var(--color-texto-secundario);
-    padding: 5vh 8vh;
+    padding: 2rem 1rem;
 }
+footer{
+    background-color: var(--color-uno);
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+/* nav */
+nav{
+    display: flex;
+    background-color: var(--color-uno);
+    font-family: var(--fuente-subtitulo);
+    width: 100%;
+    flex: 1;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    padding: 1em 3em;
+    color: var(--color-texto);
+}
+nav a:hover{
+    background-color: var(--color-dos);
+}
+#nav-principal{
+    justify-content: space-between;
+}
+#nav-principal img{
+    width: 4rem;
+    height: 4rem;
+}
+#nav-secundario{
+    justify-content: center;
+    padding: 1rem;
+}
+
 
 #cuerpo{
     max-width: 100vh;
     margin: 0 auto;
+}
+#historia{
+    border: 12px;
+    border-color: var(--color-tres);
 }

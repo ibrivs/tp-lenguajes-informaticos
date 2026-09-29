@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciudad</title> <!-- falta nombre de la ciudad -->
+    <title>HalloweenTown</title> <!-- falta nombre de la ciudad -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <nav aria-label="nav-principal">
+    <nav id="nav-principal" aria-label="principal">
         <img src="./images/logo.png" alt="halloweentown" id="logo">
         <ul>
             <li>
                 <a href="#inicio">inicio</a>
             </li>
             <li>
-                <a href="./ciudad.html">Historia</a>
+                <a href="./ciudad.html">Conocenos</a>
             </li>
             <li>
                 <a href="./lugares.html">Lugares Turisticos</a>
@@ -32,46 +32,47 @@
                 <a href="./contacto.html">Contacto</a>
             </li>
             <li>
-                <a href="#nav-pagina">Buscar Aquí</a>
+                <a href="#nav-secundario">Buscar Aquí</a>
             </li>
         </ul>
     </nav>
     <div id="cuerpo">
         <header>
-    
-            <h1> Te damos la bienvenida a HallowennTown </h1>
-            <p> Resolvemos tus dudas <strong>desde 1983</strong>.</p> <!-- falta nombre de la ciudad. -->
-            
+            <h1> Te damos la bienvenida a HalloweenTown </h1>
+            <p> La ciudad oscura, <strong>desde 1983.</strong>.</p> <!-- falta nombre de la ciudad. -->
         </header>
-    
-        <main id="inicio">        
-            <section id="historia">
+        <nav id="nav-secundario" aria-label="nav-interno">
+            <ul>
+                <li>
+                    <a href="#historia">Historia</a>
+                </li>
+                <li>
+                    <a href="#lugares">Lugares</a>
+                </li>
+                <li>
+                    <a href="#consultas">Consultas</a>
+                </li>
+                <li>
+                    <a href="#trabaja">Unite</a>
+                </li>
+                <li>
+                    <a href="#noticias">Noticias</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="inicio">
+            <section>
                 <h2> Un poco de nuestra historia...</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Amet sit vero quisquam aperiam. Debitis, sequi soluta architecto 
-                    nisi exercitationem officia totam animi nesciunt, dignissimos natus aliquid adipisci! 
-                    Quos, tempora mollitia!
-                </p>
-                <a href="./ciudad.html">Leer más...</a>
-            </section>
-    
-            <section id="Buscar">
-                <h2>¿Qué buscabas?</h2>
-                <ul>
-                    <li>
-                        <a href="./lugares.html">Lugares Turisticos.</a>
-                    </li>
-                    <li>
-                        <a href="./ciudad.html">Nuestra historia.</a>
-                    </li>
-                    <li>
-                        <a href="#noticias">Noticias.</a>
-                    </li>
-                    <li>
-                        <a href="#consultas">Tramites y Servicios.</a>
-                    </li>
-                </ul>
+                <div id="historia">
+                    <a href="./historia.html">
+                        <p>
+                            Hace mucho tiempo atras cuando apenas existian tres ciudades aparecio 
+                            entre un enorme jardin de calabazas el rey de todas ellas, 
+                            aparecio gracias a un gran festejo que producia todos los 31 de octubre, 
+                        </p>
+                        <strong>Leer mas...</strong>
+                    </a>
+                </div>
             </section>
     
             <section id="lugares">
@@ -140,20 +141,9 @@
         </main>
     </div>
     <footer>
-        <nav aria-label="nav footer">
-            <p>Por si queres visitar más...</p>
-            <ul>
-                <li>
-                    <a href="./ciudad.html">Historia</a>
-                </li>
-                <li>
-                    <a href="./lugares.html">Lugares Turisticos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <address>
+            <small>&copy; 1983 - 2026 Municipalidad de HalloweenTown. <br> Todos los derechos reservados.</small>
+        </address>
     </footer>
 </body>
 </html>
