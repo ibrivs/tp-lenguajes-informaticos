@@ -99,29 +99,31 @@ nav li{
     list-style: none;
 }
 nav a{
-    padding: 1em 3em;
+    padding: 1em 1em;
     color: var(--color-texto);
 }
 nav a:hover{
     background-color: var(--color-dos);
 }
-#nav-principal{
+.nav-principal{
     justify-content: space-between;
+    position: sticky;
+    bottom: 2rem;
 }
-#nav-principal img{
-    width: 4rem;
-    height: 4rem;
+.nav-principal img{
+    width: 4em;
+    height: 4em;
 }
-#nav-secundario{
+.nav-secundario{
     justify-content: center;
-    padding: 1rem;
+    padding: 1em;
 }
-
-
-#cuerpo{
-    max-width: 100vh;
+.cuerpo{
+    max-width: 50rem;
     margin: 0 auto;
 }
+
+
 #historia{
     border: 12px;
     border-color: var(--color-tres);
