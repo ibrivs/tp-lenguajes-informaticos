@@ -50,6 +50,11 @@ header{
 main{
     background-color: var(--color-dos);
     padding: 2rem;
+    gap: 3em;
+}
+main section{
+    border: 2px solid var(--color-tres);
+    padding: 2em;
 }
 footer{
     background-color: var(--color-uno);
@@ -117,6 +122,9 @@ form{
 h1{
     font-family: var(--fuente-titulo);
 }
+h2{
+    color: var(--color-tres);
+}
 i{
     font-family: var(--fuente-extra);
 }
@@ -133,9 +141,6 @@ img{
 }
 
 /* estilos inicio */
-#inicio-lugares{
-    text-align: center;
-}
 .contenedor{
     display: flex;
     justify-content: center;
@@ -151,4 +156,12 @@ img{
 }
 .contenedor article{
     flex: 1;
+}
+.inicio-trabajo{
+    display: flex;
+    justify-content: space-around;
+}
+.inicio-trabajo img{
+    max-width: 10em;
+    max-height: 10em;
 }
