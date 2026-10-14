@@ -11,14 +11,33 @@
     --color-uno: #3b3bb4;
     --color-dos: #556661;
     --color-tres: #0c0d11;
+    --color-cuatro: #808d89;
     --color-blanco:#eeeeee ;
     --color-negro: #000000;
 
+    --fuente: "Griffy";
     --fuente-titulo: "Coraline";
     --fuente-subtitulo: "October";
-    --fuente: "Griffy";
-    --fuente-extra: "Coral Pixels";
+    --fuente-pixel: "Coral Pixels";
+
+    --ancho-imagen: 30rem;
+    --alto-imagen: 20rem;
 }
+/* fuentes importadas:
+Rubik Glitch Pop
+Kalnia Glaze
+Honk
+Coral Pixels
+Griffy
+Jacquarda Bastarda 9
+Creepster
+Eater
+Nosifer
+Flavors
+Rubik Burned
+Rubik Puddles
+Sixtyfour Convergence
+*/
 
 /* reset basico */
 *{
@@ -39,9 +58,12 @@ body {
 header, main {
     display: flex;
     flex-direction: column;
+    align-self: center;
     flex: 1;
+    gap: 1rem;
     color: var(--color-blanco);
     margin: 6rem;
+    max-width: 800px;
 }
 header{
     justify-content: center;
@@ -49,16 +71,19 @@ header{
 }
 main{
     background-color: var(--color-dos);
+    border-radius: 4px;
+
     padding: 2rem;
-    gap: 3em;
 }
-main section{
-    border: 2px solid var(--color-tres);
+section{
     padding: 2em;
+}
+section h2{
+    text-align: center;
 }
 footer{
     background-color: var(--color-uno);
-    border-top: 3px solid var(--color-cuatro);
+    border-top: 2px solid var(--color-cuatro);
     
     text-align: center;
     color: var(--color-blanco);
@@ -81,7 +106,6 @@ nav{
 nav ul{
     display: flex;
     justify-content: center;
-    align-items: stretch;
     flex-wrap: wrap;
     gap: 2em;
     margin: 0;
@@ -98,7 +122,7 @@ nav a{
 }
 nav a:hover{
     background-color: var(--color-tres);
-    font-family: var(--fuente-extra);
+    font-family: var(--fuente-pixel);
 }
 /*nav secundario*/
 .nav-secundario{
@@ -113,9 +137,34 @@ nav a:hover{
 form{
     display: flex;
     flex-direction: column;
-
+    text-align: center;
     max-width: 300px;
     margin: auto;
+    font-size: large;
+}
+select {
+    text-align: center;
+    font-family: var(--fuente);
+    color: var(--color-blanco);
+    background-color: var(--color-tres);
+    border: none;
+    font-size: large;
+}
+button{
+    font-family: var(--fuente);
+    font-size: large;
+    background-color: var(--color-cuatro);
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: var(--color-uno);
+    font-family: var(--fuente-subtitulo);
+    font-size: large;
+    color: var(--color-blanco);
+    border-radius: 0;
+    padding: 5px;
 }
 
 /* texto */
@@ -124,9 +173,10 @@ h1{
 }
 h2{
     color: var(--color-tres);
+    font-family: var(--fuente-subtitulo);
 }
 i{
-    font-family: var(--fuente-extra);
+    font-family: var(--fuente-pixel);
 }
 a{
     text-decoration: none;
@@ -136,8 +186,8 @@ a{
 
 /* imagenes */
 img{
-    width: var(--ancho-imagen);
-    height: var(--alto-imagen);
+    max-width: var(--ancho-imagen);
+    max-height: var(--alto-imagen);
 }
 
 /* estilos inicio */
@@ -145,7 +195,11 @@ img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: var(--color-cuatro);
+    border-radius: 5px;
     gap: 2rem;
+    margin: 1rem 0;
+    padding: 5px;
 }
 .contenedor img{
     max-width: 100%;
@@ -158,10 +212,20 @@ img{
     flex: 1;
 }
 .inicio-trabajo{
+    background-color: var(--color-cuatro);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
 }
 .inicio-trabajo img{
     max-width: 10em;
-    max-height: 10em;
+    max-height: 5em;
+}
+.link{
+    background-color: var(--color-cuatro);
+    padding: 0 1em;
+    border-radius: 5px;
 }

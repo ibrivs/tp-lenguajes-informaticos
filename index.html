@@ -7,11 +7,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Creepster&family=Eater&family=Flavors&family=Griffy&family=Honk:MORF@15&family=Jacquarda+Bastarda+9&family=Kalnia+Glaze:wght@100..700&family=Nosifer&family=Rubik+Burned&family=Rubik+Glitch+Pop&family=Rubik+Puddles&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">    <!-- CSS -->
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -23,19 +19,27 @@
         <h1>Bienvenid@ a HalloweenTown</h1>
     </header>
     <main>
-        <form action="inicio.html" method="get">
-            <label for="ciudadano">¿Que eres?</label>
-            <select name="ciudadano" id="ciudadano" required>
-                <option value="">Selecciona una opción</option>
-                <option value="fantasma">Fantasma</option>
-                <option value="vampiro">Vampiro</option>
-                <option value="bruja">Bruja</option>
-                <option value="zombie">Zombie</option>
-                <option value="monstruo">Monstruo</option>
-                <option value="otro">Otro</option>
-            </select>
-            <button type="submit">Entrar</button>
-        </form>
+        <section>
+            <h2>¿Estas buscando adentrarte a la oscuridad junto a nosotros?</h2>
+            <p>Para presentarte en nuestras tierras primero debes darnos una pequeña visión de quién o más bien <i>qué</i> eres... joven visitante.</p>
+            <hr>
+            <form action="inicio.html" method="get">
+                <label for="ciudadano">¿Qué eres?</label>
+                <div class="selector">
+                    <select name="ciudadano" id="ciudadano" required>
+                        <option value="humano" class="humano">Humano</option>
+                        <option value="fantasma" class="fantasma">Fantasma</option>
+                        <option value="vampiro" class="vampiro">Vampiro</option>
+                        <option value="bruja" class="bruja">Bruja</option>
+                        <option value="zombie" class="zombie">Zombie</option>
+                        <option value="monstruo" class="monstruo">Monstruo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <button type="submit">Entrar</button>
+                </div>
+            </form>
+            <hr>
+        </section>
     </main>
     <footer>
         <address>
