@@ -50,10 +50,11 @@ body {
 header{
     color: var(--color-blanco);
     text-align: center;
-    
-    margin: auto;
-    padding: 6rem;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 6rem 0;
 }
+header h1{ margin-top: 4rem; }
 main{
     max-width: 800px;
     align-content: center;
@@ -217,3 +218,12 @@ img{
     padding: 0 1em;
     border-radius: 5px;
 }
+:root { --color-naranja: #ff7518; }
+.navbar-halloween {
+    --bs-navbar-color: var(--color-blanco);
+    --bs-navbar-hover-color: var(--color-naranja);
+    --bs-navbar-active-color: var(--color-naranja);
+    border-bottom: 3px solid var(--color-naranja);
+}
+.navbar-halloween .navbar-toggler { border-color: var(--color-naranja); }
+.navbar-halloween .navbar-nav { gap: 0; }
