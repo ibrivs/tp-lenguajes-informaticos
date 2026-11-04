@@ -13,6 +13,8 @@
 
     --ancho-imagen: 30rem;
     --alto-imagen: 20rem;
+
+    --borde: 2px solid var(--color-gris-claro);
 }
 /* fuentes importadas:
 Rubik Glitch Pop
@@ -66,7 +68,7 @@ main{
 }
 footer{
     background-color: var(--color-violeta);
-    border-top: 2px solid var(--color-gris-claro);
+    border-top: var(--borde);
     
     text-align: center;
     color: var(--color-blanco);
@@ -111,7 +113,7 @@ figure{
 .navbar-halloween {
     --bs-navbar-color: var(--color-blanco);
     --bs-navbar-hover-color: none;
-    border-bottom: 2px solid var(--color-gris-claro);
+    border-bottom: var(--borde);
 }
 .navbar-halloween .navbar-toggler { border: none; }
 .navbar-halloween .navbar-nav { gap: 0; }
