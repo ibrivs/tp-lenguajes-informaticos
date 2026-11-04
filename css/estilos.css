@@ -1,10 +1,10 @@
 :root {
-    --color-uno: #3b3bb4;
-    --color-dos: #556661;
-    --color-tres: #0c0d11;
-    --color-cuatro: #808d89;
+    --color-violeta: #3b3bb4;
+    --color-gris-claro: #808d89;
+    --color-gris: #556661;
+    --color-negro: #0c0d11;
     --color-blanco:#eeeeee ;
-    --color-negro: #000000;
+    --color-naranja: #ff7518;
 
     --fuente: "Griffy";
     --fuente-titulo: "Flavors";
@@ -36,42 +36,36 @@ Sixtyfour Convergence
     margin: 0;
     padding: 0;
 }
+a{
+    color: var(--color-blanco);
+    text-decoration: none;
+}
 
 /*body y generales*/
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    gap: 1rem;
 
-    background-color: #0c0d11;
+    background-color: var(--color-negro);
     font-family: var(--fuente);
 }
 header{
     color: var(--color-blanco);
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0 0 6rem 0;
 }
-header h1{ margin-top: 4rem; }
+nav {
+    background-color: var(--color-violeta);
+}
 main{
     max-width: 800px;
-    align-content: center;
-    flex: 1;
-    background-color: var(--color-dos);
-    border-radius: 4px;
+    background-color: var(--color-gris);
     
     margin: auto;
     padding: 2rem;
 }
-section{
-    padding: 2em;
-}
-
 footer{
-    background-color: var(--color-uno);
-    border-top: 2px solid var(--color-cuatro);
+    background-color: var(--color-violeta);
+    border-top: 2px solid var(--color-gris-claro);
     
     text-align: center;
     color: var(--color-blanco);
@@ -80,80 +74,7 @@ footer{
     margin-top: 2rem;
 }
 
-/* navegador */
-nav{
-    background-color: var(--color-uno);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.logo{
-    width: 4rem;
-    height: 4rem;
-}
-nav ul{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
-    margin: 0;
-    padding: 0;
-}
-nav li{
-    display: flex ;
-    list-style: none;
-}
-nav a{
-    display: flex;
-    align-items: center;
-    padding: 0 1em;
-}
-nav a:hover{
-    background-color: var(--color-tres);
-    font-family: var(--fuente-pixel);
-}
-/*nav secundario*/
-.nav-secundario{
-    background-color: var(--color-tres);
-    border: 3px solid var(--color-dos);
-    justify-content: center;
-    padding: 1rem;
-    margin: 10rem 0 0 0;
-}
-
 /* formularios */
-form{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    max-width: 300px;
-    margin: auto;
-    font-size: large;
-}
-select {
-    text-align: center;
-    font-family: var(--fuente);
-    color: var(--color-blanco);
-    background-color: var(--color-tres);
-    border: none;
-    font-size: large;
-}
-button{
-    font-family: var(--fuente);
-    font-size: large;
-    background-color: var(--color-cuatro);
-    border: none;
-    padding: 2px;
-    border-radius: 5px;
-}
-button:hover{
-    background-color: var(--color-uno);
-    font-family: var(--fuente-subtitulo);
-    font-size: large;
-    color: var(--color-blanco);
-    border-radius: 0;
-    padding: 5px;
-}
 
 /* texto */
 h1{
@@ -167,63 +88,28 @@ h2{
 i{
     font-family: var(--fuente-pixel);
 }
-a{
-    text-decoration: none;
-    color: var(--color-blanco);
-    font-family: var(--fuente);
-}
 
 /* imagenes */
+.logo{
+    height: 50px;
+}
 img{
-    max-width: var(--ancho-imagen);
-    max-height: var(--alto-imagen);
+    width: 100%;
+}
+figure{
+    margin: 0;
 }
 
 /* estilos inicio */
-.contenedor{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: var(--color-cuatro);
-    border-radius: 5px;
-    gap: 2rem;
-    margin: 1rem 0;
-    padding: 5px;
+
+.title{
+    max-width: 800px;
+    padding: 6%;
 }
-.contenedor img{
-    max-width: 100%;
-    max-height: 100%;
-}
-.contenedor figure{
-    flex: 1;
-}
-.contenedor article{
-    flex: 1;
-}
-.inicio-trabajo{
-    background-color: var(--color-cuatro);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 5px;
-}
-.inicio-trabajo img{
-    max-width: 10em;
-    max-height: 5em;
-}
-.link{
-    background-color: var(--color-cuatro);
-    padding: 0 1em;
-    border-radius: 5px;
-}
-:root { --color-naranja: #ff7518; }
 .navbar-halloween {
     --bs-navbar-color: var(--color-blanco);
-    --bs-navbar-hover-color: var(--color-naranja);
-    --bs-navbar-active-color: var(--color-naranja);
-    border-bottom: 3px solid var(--color-naranja);
+    --bs-navbar-hover-color: none;
+    border-bottom: 2px solid var(--color-gris-claro);
 }
-.navbar-halloween .navbar-toggler { border-color: var(--color-naranja); }
+.navbar-halloween .navbar-toggler { border: none; }
 .navbar-halloween .navbar-nav { gap: 0; }
