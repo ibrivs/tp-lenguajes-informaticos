@@ -59,6 +59,7 @@ nav {
 main{
     max-width: 800px;
     background-color: var(--color-gris);
+    border-radius: 4px;
     
     margin: auto;
     padding: 2rem;
@@ -95,6 +96,7 @@ i{
 }
 img{
     width: 100%;
+    border-radius: 4px;
 }
 figure{
     margin: 0;
