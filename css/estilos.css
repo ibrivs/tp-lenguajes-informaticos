@@ -117,3 +117,44 @@ figure{
 }
 .navbar-halloween .navbar-toggler { border: none; }
 .navbar-halloween .navbar-nav { gap: 0; }
+
+.actividades-cementerio {
+    margin-top: 1rem;
+}
+
+.actividades-mansion{
+    margin-top: 1rem;
+}
+
+.actividades-museo{
+    margin-top: 1rem;
+}
+
+.entradas-parque{
+    margin-top: 1rem;
+}
+
+/* MODO CLARO */
+body.light-mode {
+    background-color: #eeeeee;
+    color: #0c0d11;
+}
+
+body.light-mode header {
+    color: #0c0d11;
+}
+
+body.light-mode main {
+    background-color: #d6d6e8;
+    color: #0c0d11;
+}
+
+body.light-mode nav,
+body.light-mode footer {
+    background-color: #b8b8e8;
+    color: #0c0d11;
+}
+
+body.light-mode a {
+    color: #25256b;
+}
