@@ -1,18 +1,86 @@
-# tp-lenguajes-informaticos
-no se 
-# no se nada
-de forma resumida mi idea para toda la ciudad es que sea una de las tantas ciudades de un pais enorme donde cada ciudad estara inspirada en una festividad o una temporada del año por ejemplo: halloweentown (halloween), the kingdom of flowers (primavera), Winterhaven (navidad), Snowdin (invierno), etc.
+# Halloweentown
 
-halloweentown estara dividido en sectores como nueva york dependiendo de la especie del monstruo y de sus necesidades, por ejemplo los montruos de agua necesitan estar cerca del rio o del pantano para poder vivir incluso pudiendo vivir algunos en las fuentes de la ciudad, en hollow bastion por el dia no hay nada ni nadie hasta que cae la noche y aparecen las sombras, entes sin cuerpo fisico pero con forma maleable como si fueran unas sombras, al lastimarles la luz ellos se esconden por el dia y viven en la noche
+## Descripción general
 
-toda la ciudad y sus habitantes solo existen por una razon, dar miedo, sin terror no hay diversion porque ese es su fin, asi que todo en la ciudad debe girar alrededor de la idea de que debe dar miedo, halloweentow y sus habitantes solo existen para hacer eso porque es su naturaleza ser seres a los cuales temer, no importa si lo hacen conciente o inconscientemente ellos lo hacen por naturaleza, eso es lo mas importante de estos seres.
+La idea general de este universo consiste en un extenso país compuesto
+por numerosas ciudades, cada una inspirada en una festividad o estación
+del año. Algunos ejemplos son Halloweentown, cuya temática gira en torno
+a Halloween; The Kingdom of Flowers, inspirada en la primavera;
+Winterhaven, relacionada con la Navidad; y Snowdin, representativa del
+invierno. Cada ciudad cuenta con su propia identidad y características
+particulares, determinadas por la temática que representa.
 
-# historia
-esta ciudad fue creada por uno de los seres mas temidos y misteriosos de todos, el rey calabaza, el creo toda la ciudad para que aquellos monstruos temidos por todos sean aceptados entre otros monstruos, siendo gracias a que su rey era llamado como el rey calabaza (por su cabeza) el simbolo oficial del rey es una calabaza al igual que muchas decoraciones de la ciudad.
-eso es en resumen la ciudad calabaza y su historia
+Halloweentown se encuentra dividida en distintos sectores, siguiendo una
+organización similar a la de una gran ciudad como Nueva York. Estos
+sectores están distribuidos principalmente según las especies de
+monstruos que los habitan y las necesidades particulares de cada una.
+Por ejemplo, los monstruos acuáticos necesitan establecerse cerca de
+fuentes de agua, como ríos o pantanos, aunque algunos también pueden
+habitar en las fuentes de la propia ciudad.
 
-# datos curiosos (o al pedo)
-1) los habitantes de halloweentown aunque dan miedo y pueden llegar a provocar "accidentes" aun asi la mayoria de sus habitantes son muy amigable y amistosos con todos, incluso muchos de ellos cuando ven a un visitante lo tratan con la misma amabilidad con la que los trato el gran rey calabaza.
-2) todos en halloweentown celebran distintas festividades siendo la favorita navidad hasta un punto en el que el rey calabaza se disfraza de un santa claus todo trucho para dar regalos por toda la ciudad (esos regalos son mas peligrosos que los de santa), y en la ciudad de navidad la unica festividad que celebran alli es halloween en octubre
-3) halloweentown posee su propia moneda siendo las "punking coins" siendo el equivalente al peso argentino asi que exites distintas monedas con distintos valores, aunque tambien esta permitido usar las monedas de otros paises aunque depende completamente del establecimiento para aceptar o rechazar la moneda
-4) hay tres lugares que le pertenecen directamente al rey calabaza eso significa que nadie se los puede apropiar siendo esos lugares, su castillo, el parque de las calabaza y el barrio de la calabaza, siendo estos tres sectores los cuales cualquier ser puede visitar si asi lo desea
+Uno de sus sectores más particulares es Hollow Bastion, un lugar que
+permanece prácticamente deshabitado durante el día, hasta que llega la
+noche y aparecen sus habitantes: las sombras. Estas entidades carecen de
+un cuerpo físico definido y poseen una forma maleable, similar a la de
+una sombra convencional. Debido a su vulnerabilidad ante la luz,
+permanecen ocultas durante el día y desarrollan sus actividades
+principalmente durante la noche.
+
+La característica fundamental de Halloweentown es que tanto la ciudad
+como todos sus habitantes existen con un único propósito: provocar
+miedo. Para ellos, el terror no es simplemente una característica, sino
+la razón misma de su existencia. Sin miedo no hay diversión, y esa es la
+esencia que define a estos seres. Independientemente de que lo hagan de
+manera consciente o inconsciente, todos sus habitantes tienen una
+naturaleza orientada a generar temor. Este concepto es el aspecto más
+importante de la identidad de Halloweentown.
+
+## Historia
+
+Halloweentown fue fundada por uno de los seres más temidos y misteriosos
+que existen: el Rey Calabaza. Su propósito al crear la ciudad fue
+ofrecer un lugar donde aquellos monstruos que eran temidos y rechazados
+por otros pudieran encontrar aceptación y convivir con seres de su misma
+naturaleza.
+
+El nombre del Rey Calabaza proviene de su característica cabeza con
+forma de calabaza, la cual terminó convirtiéndose también en el
+principal símbolo de la ciudad. Su imagen se encuentra presente en
+numerosas decoraciones y representaciones de Halloweentown, formando
+parte de su identidad y cultura.
+
+De esta manera, la ciudad no solo representa un lugar de convivencia
+para los monstruos, sino también el legado de su fundador y la idea que
+dio origen a su creación.
+
+## Datos curiosos
+
+1.  A pesar de su apariencia aterradora y de que algunos de sus
+    habitantes pueden llegar a provocar accidentes, la mayoría de los
+    residentes de Halloweentown son amigables y hospitalarios. Incluso
+    suelen recibir a los visitantes con la misma amabilidad con la que
+    el Rey Calabaza los ha tratado desde la fundación de la ciudad.
+
+2.  Los habitantes de Halloweentown celebran distintas festividades a lo
+    largo del año, siendo la Navidad una de sus favoritas. La
+    celebración es tan importante que el propio Rey Calabaza suele
+    disfrazarse de una versión bastante particular de Santa Claus para
+    repartir regalos por toda la ciudad. Sin embargo, estos obsequios
+    pueden resultar considerablemente más peligrosos que los que entrega
+    el Santa Claus tradicional. Curiosamente, en la ciudad de Navidad
+    ocurre lo contrario: durante el mes de octubre, la única festividad
+    que se celebra es Halloween.
+
+3.  Halloweentown posee su propia moneda oficial, denominada "Pumpkin
+    Coins", cuyo valor de referencia equivale al peso argentino. Existen
+    distintas denominaciones y valores para facilitar las transacciones
+    dentro de la ciudad. También está permitido utilizar monedas de
+    otros países, aunque su aceptación depende exclusivamente de cada
+    establecimiento, que puede decidir si las acepta o no.
+
+4.  Existen tres lugares dentro de Halloweentown que pertenecen
+    exclusivamente al Rey Calabaza, por lo que ningún otro habitante
+    puede apropiarse de ellos. Estos son su castillo, el Parque de las
+    Calabazas y el Barrio de la Calabaza. A pesar de pertenecer
+    directamente al rey, los tres espacios pueden ser visitados
+    libremente por cualquier ser que desee conocerlos.
