@@ -118,6 +118,21 @@ figure{
 .navbar-halloween .navbar-toggler { border: none; }
 .navbar-halloween .navbar-nav { gap: 0; }
 
+/* navbar en pantallas chicas: logo a la izquierda, boton de tema y hamburguesa a la derecha */
+@media (max-width: 991.98px) {
+    .navbar-halloween .boton-tema {
+        order: 1;
+        margin-left: auto;
+    }
+    .navbar-halloween .navbar-toggler {
+        order: 2;
+        margin-left: 0.75rem;
+    }
+    .navbar-halloween .navbar-collapse {
+        order: 3;
+    }
+}
+
 .actividades-cementerio {
     margin-top: 1rem;
 }
