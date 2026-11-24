@@ -20,46 +20,60 @@
                 <a class="navbar-brand" href="./index.html">
                     <img class="logo" src="./imagenes/logo.png" alt="HalloweenTown">
                 </a>
-                <!-- Botón para cambiar el tema -->
-                 <button type="button" id="boton-tema" class="boton-tema">
-                  ☀️ Modo claro
-                 </button>
+                <button type="button" id="boton-tema" class="boton-tema">
+                ☀️ Modo claro
+                </button>
             </div>
         </nav>
-        <div class="container title text-center">
-            <h1>Bienvenid@ a HalloweenTown</h1>
-        </div>
     </header>
     <main>
         <section>
-            <h2>¿Estas buscando adentrarte a la oscuridad junto a nosotros?</h2>
-            <p>Para presentarte en nuestras tierras primero debes darnos una pequeña visión de quién o más bien <i>qué</i> eres... joven visitante.</p>
-            <hr>
-            <form action="inicio.html" method="get">
-                <label for="ciudadano">¿Qué eres?</label>
-                <div class="selector">
-                    <select name="ciudadano" id="ciudadano" required>
-                        <option value="humano" class="humano">Humano</option>
-                        <option value="fantasma" class="fantasma">Fantasma</option>
-                        <option value="vampiro" class="vampiro">Vampiro</option>
-                        <option value="bruja" class="bruja">Bruja</option>
-                        <option value="zombie" class="zombie">Zombie</option>
-                        <option value="monstruo" class="monstruo">Monstruo</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <button type="submit">Entrar</button>
-                </div>
-            </form>
-            <hr>
+            <div class="container col-xl-10 col-xxl-8 px-4 py-5"> 
+                <div class="row align-items-center g-lg-5 py-5 hero-index"> 
+                    <div class="col-lg-7 text-center text-lg-start"> 
+                        <h1 class="display-4 fw-bold mb-3">
+                            Bienvenid@ a HalloweenTown
+                        </h1> 
+                        <p class="col-lg-10 fs-5">
+                            ¿Estas buscando adentrarte a la oscuridad junto a nosotros?
+                            Para presentarte en nuestras tierras primero debes darnos una pequeña visión de quién y 
+                            <i>qué</i> eres joven visitante.
+                        </p> 
+                    </div> 
+                    <div class="col-md-10 mx-auto col-lg-5 rounded-3"> 
+                        <form class="p-4 p-md-5 border rounded-3 form-index main-content" id="index-form"> 
+                            <div class="form-floating mb-3"> 
+                                <input class="form-control" id="input-nombre" placeholder="name"> 
+                                <label for="floatingInput">Nombre</label> 
+                            </div> 
+                            <div class=" mb-3"> 
+                                <select id="especie" class="form-select" aria-label="Default select example">
+                                    <option selected disabled> Especie </option>
+                                    <option value="1"> Monstruo </option>
+                                    <option value="2"> Vampiro </option>
+                                    <option value="3"> Hombre Lobo </option>
+                                    <option value="4"> Bruja </option>
+                                    <option value="5"> Espectro </option>
+                                    <option value="6" disabled> Humano </option>
+                                </select>
+                            </div> 
+                            <button class="w-100 btn btn-form" type="submit" href="./inicio.html" id="index-btn">
+                                Entrar
+                            </button> 
+                        </form> 
+                    </div> 
+                </div> 
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="py-3 mb-4 text-center"> 
         <p>
             <small>&copy; 1983 - 2026 Municipalidad de HalloweenTown. <br> Todos los derechos reservados.</small>
         </p>
     </footer>
+
 <!-- JS BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="./js/script.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

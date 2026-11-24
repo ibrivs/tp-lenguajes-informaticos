@@ -1,6 +1,6 @@
 :root {
-    --color-violeta: #3b3bb4;
-    --color-gris-claro: #808d89;
+    --color-violeta: #25256b;
+    --color-gris-oscuro: #4b5a56;
     --color-gris: #556661;
     --color-negro: #0c0d11;
     --color-blanco:#eeeeee ;
@@ -15,6 +15,9 @@
     --alto-imagen: 20rem;
 
     --borde: 2px solid var(--color-gris-claro);
+
+    --bs-secondary-rgb: #fff7ee85;
+    --bs-body-color: #fff7ee9c;
 }
 /* fuentes importadas:
 Rubik Glitch Pop
@@ -39,76 +42,110 @@ Sixtyfour Convergence
     padding: 0;
 }
 a{
-    color: var(--color-blanco);
+    color: inherit;
     text-decoration: none;
 }
 
 /*body y generales*/
+html, body{
+    height: 100%;
+}
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 
     background-color: var(--color-negro);
     font-family: var(--fuente);
-}
-header{
-    color: var(--color-blanco);
 }
 nav {
     background-color: var(--color-violeta);
 }
 main{
-    max-width: 800px;
-    background-color: var(--color-gris);
-    border-radius: 4px;
-    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    padding: 2rem;
 }
 footer{
     background-color: var(--color-violeta);
     border-top: var(--borde);
-    
-    text-align: center;
-    color: var(--color-blanco);
-    
-    padding: 1rem;
+    color: var(--bs-body-color);
     margin-top: 2rem;
 }
 
+.main-content{
+    background-color: var(--color-gris);
+    border-radius: 3px;
+    padding: 3rem;
+    max-width: 1100px;
+}
+
 /* formularios */
+.form-control, .form-select, .form-check-input, .list-group-item{
+    background-color: var(--color-gris-oscuro);
+    border: none;
+}
+.form-control:focus, .form-select:focus {
+  background-color: var(--color-gris-oscuro);
+  border: 0;
+}
+.btn-form {
+    background-color:var(--color-violeta);
+}
+.btn-form:hover{
+    background-color: var(--color-violeta);
+}
+.alert{
+    background-color: var(--color-naranja);
+    color: var(--color-negro);
+    text-align: center;
+    border: #0c0d11 solid 1px;
+}
+.form-interno{
+    background-color: var(--color-gris);
+}
+.accordion-body, .accordion-button{
+    background-color: var(--color-gris-oscuro);
+}
+.accordion-button:focus{
+    background-color: var(--color-gris-oscuro);
+}
 
 /* texto */
 h1{
     font-family: var(--fuente-titulo);
-    font-size: 4rem;
 }
 h2{
-    color: var(--color-blanco);
-    font-family: var(--fuente-subtitulo);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+p{
+    font-size: 1.25rem;
+    margin: 0;
 }
 i{
     font-family: var(--fuente-pixel);
+}
+b{
+    font-family: "Creepster";
 }
 
 /* imagenes */
 .logo{
     height: 50px;
 }
-img{
-    width: 100%;
-    border-radius: 4px;
-}
-figure{
-    margin: 0;
-}
 
 /* estilos inicio */
-
-.title{
-    max-width: 800px;
-    padding: 6%;
+.card{
+    background-color:#4b5a56;
+}
+.card p{
+    font-size: 1.1rem;
+}
+.card-footer{
+    background-color: #808d89;
 }
 .navbar-halloween {
     --bs-navbar-color: var(--color-blanco);

@@ -34,38 +34,261 @@
                         <li class="nav-item"><a class="nav-link" href="./lugares.html">Lugares turísticos</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                     </ul>
+                    <button type="button" id="boton-tema" class="boton-tema">
+                      ☀️ Modo claro
+                     </button>
                 </div>
-                <button type="button" id="boton-tema" class="boton-tema">
-                  ☀️ Modo claro
-                 </button>
             </div>
         </nav>
-        <div class="container title text-center">
-            <h1>Lugares turisticos de Halloweentown</h1>
-        </div>
+        <div class="text-secondary px-4 py-5 text-center mb-4"> 
+            <div class="py-5 title mb-4"> 
+                <h1 class="display-5">
+                    Lugares turisticos de Halloweentown
+                </h1> 
+                <div class="col-lg-6 mx-auto"> 
+                    <p class="fs-5 mb-4"> 
+                        Tenemos los lugares mas terrorificos en los cuales nadie se atreveria a entrar...
+                </div> 
+            </div> 
+        </div> 
     </header>
-    <main>
-        <hr>
+    <main class="main-content">
         <section id="lugares-historicos">
-                <h2>Lugares históricos</h2>
-                <p>
-                    ¿Primera vez en Halloweentown? No te preocupes, aquí te dejamos una lista de los lugares más importantes de la ciudad.<br>
-                    <strong>¡No te vayas sin conocerlos!</strong>
-                </p>
-                 <ul>
-                    <li> <a href="./lugares/cementerio.html">Cementerio Histórico</a></li>
-                     <img src="./imagenes/cementerio.jpg" alt="Cementerio Histórico" width="300">
-                      <hr>
-                    <li> <a href="./lugares/mansion-fantasma.html">La casa de los fantasmas</a></li>
-                     <img src="./imagenes/mansion.jpg" alt="La casa de los fantasmas" width="300">
-                      <hr>
-                    <li> <a href="./lugares/museo.html">El museo de la ciudad</a></li>
-                     <img src="./imagenes/museo.jpg" alt="El museo de la ciudad" width="300">
-                      <hr>
-                    <li> <a href="./lugares/parque.html">El parque de los monstruos</a></li>
-                     <img src="./imagenes/parque.jpg" alt="Parque de los Monstruos" width="300">
-                      <hr>
-                </ul>
+            <h2>Lugares históricos</h2>
+            <p>
+                ¿Primera vez en Halloweentown? No te preocupes, aquí te dejamos una lista de los lugares más importantes de la ciudad.<br>
+                <b>¡No te vayas sin conocerlos!</b>
+            </p>
+
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./imagenes/cementerio.jpg" alt="Cementerio Histórico">
+                    <div class="card-body">
+                        <div class="accordion accordion-flush card-title" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        
+                                        <h5 class="card-title">Cementerio Historico</h5>
+
+                                    </button>
+                                </h2>
+
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                    <p class="text-center">
+
+                                        <h2> Cementerio Historico </h2>
+                                        <hr class="my-3">
+                                        <p>
+                                            El Cementerio Histórico de Halloweentown es el hogar de los muertos vivientes, también conocidos como zombis.
+                                            Cada uno permanece junto a su propia tumba conservando gran parte de la personalidad que tenía en vida;
+                                            aunque los domina un hambre voraz, muchos mantienen intacta su conciencia y son capaces de sostener una charla perfectamente fluida
+                                            con quien se anime a acercarse.
+                                            <br>
+                                            Puedes aprender mucho más con las visitas guiadas por el guía turístico Gerson, el viejo de la cripta.
+                                        </p>
+
+                                        <hr class="my-3">
+
+                                        <h3> Visitas guiadas por el viejo de la crypta</h3>
+                                        <p> 
+                                            El cementerio ofrece visitas guiadas impartidas por el viejo de la cripta, un cadáver que habita nuestras tierras desde antes de la fundación de la ciudad; 
+                                            Nadie mejor que un muerto viviente con consciencia para guiarte por el cementerio.
+                                            Sus destacada memoria permiten a los visitantes conocer la historia detrás de cada tumba famosa y monumento.
+                                            <br> 
+                                            Además, se organizan eventos especiales durante todo el año; entre algunas de ellas, el viejo de la cripta relata distintas historias de terror para toda la familia. Se volvieron tan populares que obtuvieron su propio canal conocido como "Los cuentos de la cripta".
+                                        </p>
+                                        <ul>
+                                            <li><a href="#recorridos-nocturnos">Recorridos nocturnos</a></li>
+                                            <li><a href="#festivales">Festivales y celebraciones</a></li>
+                                            <li><a href="#charlas-cementerio"> Charlas históricas</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./imagenes/mansion.jpg" alt="La casa de los fantasmas">
+                    <div class="card-body">
+                        <div class="accordion accordion-flush card-title" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        
+                                        <h5 class="card-title">Mansión de los Fantasmas...</h5>
+
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        
+                                        <h2>La Mansion de los Fantasmas</h2>
+
+                                        <hr class="my-3">
+                                        
+                                        <p>
+                                            La gran mansión de los fantasmas es propiedad del temible conde Mortarion. El legado de su dinastia y la fama 
+                                            de su residencia convirtieron a <b>"El Panteón de los Difuntos"</b> 
+                                            en uno de los sectores más visitados de Halloweentown.
+                                            Si bien el conde ya no habita la ciudad, el gran <i>Señor Calabaza </i>mantiene
+                                            encendida la esperanza de que algún día regrese para volver a asombrarnos con su temible figura.
+                                        </p>
+
+                                        <hr class="my-3">
+
+                                        <h3> Visitas guiadas </h3>
+                                        <p> 
+                                            La mansion ofrece visitas guiadas que invitan a los visitantes conocer 
+                                            la historia del sector y sus mejores monumentos.
+                                        </p>
+                                        <b>
+                                            <a href="#recorridos-casa">Reserva tu visita guiada acá...</a>
+                                        </b>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./imagenes/museo.jpg" alt="El museo de la ciudad">
+                    <div class="card-body">
+                        <div class="accordion accordion-flush card-title" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        
+                                        <h5 class="card-title">El museo de la ciudad.</h5>
+
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                        <h2> El museo de la ciudad </h2>
+
+                                        <hr class="my-3">
+
+                                        <p>
+                                            El Museo Histórico de Halloweentown es un lugar en el 
+                                            que se cuentan muchas de las historias más importantes de nuestra ciudad, 
+                                            incluyendo nuestro origen.
+                                            <b>
+                                                Entre algunos de los artículos destacados se encuentran:
+                                            </b>
+                                        
+                                        <h3>El ataúd del primer conde:</h3>
+                                        <p>
+                                            El primer conde Drácula usaba este ataúd para dormir de día y deambular de noche. 
+                                            Es célebre tanto por su legendario propietario como por las alucinaciones que desencadena 
+                                            —visiones de criaturas terroríficas y futuros catastróficos—,
+                                            motivo por el cual permanece resguardado en una zona especial del museo lejos de los visitantes.
+                                        </p>
+
+                                        <h3>El amuleto maldito:</h3>
+                                        <p> 
+                                            Esta pieza es en realidad una réplica del amuleto original que perteneció a una antigua entidad pagana llegada a la ciudad. 
+                                            Su energía rivaliza con la del Rey Calabaza y, según se cuenta, otorga un enorme poder a cambio de la cordura de quien lo posee. 
+                                            Como además alimenta la codicia de quienes lo observan, se mantiene a buen resguardo en la mansión del propio Rey Calabaza. 
+                                            Para conocer más sobre la historia de nuestra ciudad, pueden sumarse a las visitas guiadas del museo de Halloweentown.
+                                        </p>
+
+                                        <hr class="my-3">
+                                        <h3> Visitas guiadas y eventos especiales</h3>
+                                        <p> 
+                                            El museo da visitas guiadas donde cualquiera puede ir y conocer la historia de Halloweentown y de todos sus objetos célebres.
+                                        </p>
+                                        <a href="#visitas-museo">Reserva tu visita guiada acá.</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./imagenes/parque.jpg" alt="Parque de los Monstruos">
+                    <div class="card-body">
+                        <div class="accordion accordion-flush card-title" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        
+                                        <h5 class="card-title">El museo de la ciudad.</h5>
+
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                        <h2>¿Listo para divertirte? </h2>
+
+                                        <hr class="my-3">
+                                        
+                                        <p>
+                                            Si lo que buscas es terror y diversión, entonces ven y acompáñanos a <b>HORROR LAND!!!.</b>
+                                            este fantastico sitio de horror y diversion esta lleno de atracciones horripilantemente peligrosas pero <b>DIVERTIDAS!!!</b>
+                                            habra todo tipo de entretenimiento para todos los tipos de seres vivos y no vivos.
+                                        </p>
+
+                                        <hr class="my-3">
+                                        
+                                        <h3> Entradas</h3>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">Entradas</th>
+                                                <th scope="col">Precio</th>
+                                                <th scope="row"> Cantidad </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>General</td>
+                                                    <td>🎃︎2500</td>
+                                                    <th scope="row">c/u</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>VIP</td>
+                                                    <td>🎃︎3500</td>
+                                                    <th scope="row">c/u</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Demoniaca</td>
+                                                    <td>🎃︎5000</td>
+                                                    <th scope="row">c/u</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                        <hr class="my-3">
+
+                                        <div class="alert" role="alert">
+                                            <h4 class="alert-heading">Horarios</h4>
+                                            <p>11:00 AM - 9:00 PM</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

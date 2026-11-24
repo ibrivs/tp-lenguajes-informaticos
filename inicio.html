@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +21,6 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark navbar-halloween" aria-label="principal">
             <div class="container">
-
                 <a class="navbar-brand" href="./inicio.html">
                     <img class= "logo" src="./imagenes/logo.png" alt="HalloweenTown">
                 </a>
@@ -36,27 +34,54 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="./inicio.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./ciudad.html">Conócenos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./lugares.html">Lugares turísticos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./lugares.html">Lugares</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                     </ul>
+                    <button type="button" id="boton-tema" class="boton-tema">
+                      ☀️ Modo claro
+                    </button>
                 </div>
-                 <button type="button" id="boton-tema" class="boton-tema">
-                  ☀️ Modo claro
-                 </button>
             </div>
         </nav>
-        <div class="container title text-center">
-            <h1> Muy buenas, jóvenes, niños, adultos y muertos, ¿no has querido visitar un lugar tan espectacularmente asombroso que te vuele los sesos del cráneo y saques tus ojos de sus órbitas oculares? Pues estás de suerte porque te damos la bienvenida a Halloween Town </h1>
-            <p> , una ciudad llena de caos, terror y diversión para todas las edades, inclusive para los muertos <b> JAJAJAJAJAA.</b>.</p>
-        </div>
+        <div class="text-secondary px-4 py-5 text-center mb-4"> 
+            <div class="py-5 title mb-4"> 
+                <h1 class="display-5">
+                    Te damos la bienvenida <span id="nombre"></span>a HalloweenTown 
+                </h1> 
+                <div class="col-lg-6 mx-auto"> 
+                    <p class="fs-5 mb-4"> 
+                        ¿No has querido visitar un lugar tan espectacularmente asombroso 
+                        que te vuele los sesos del cráneo y saques tus ojos de sus órbitas oculares? 
+                        Pues estás de suerte porque te damos la bienvenida a HalloweenTown
+                        una ciudad llena de caos, terror y diversión para todas las edades, inclusive para los muertos <b>JAJAJAJAJAA</b>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
+                        <a class="btn btn-lg px-4 me-sm-3 fw-bold" href="#inicio">
+                            Continuar
+                        </a> 
+                        <a class="btn btn-lg px-4" href="./index.html">
+                            Salir
+                        </a> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>    
     </header>
-    <main id="inicio">
-        <p>
-            Estamos aquí para traerte monstruosidades incomprencibles para los simples humanos y mortales, podrán venir a ver, relacionarse y llenarse de nuestra extensa y gloriosa cultura.
-            [no nos hacemos cargo de cualquier consecuensia o daño hacia tu persona]
-        </p>
-        <div class="container">
-            <section>
+
+    <main class="main-content">
+        <hr class="my-1">
+        <section id="inicio" class="container">
+            <h2>
+                La ciudad más oscura con ustedes <b>desde 1983.</b></p>
+            </h2>
+            <p>
+                Estamos aquí para traerte monstruosidades incomprencibles para los simples humanos y mortales, podrán venir a ver, relacionarse y llenarse de nuestra extensa y gloriosa cultura.
+                [no nos hacemos cargo de cualquier consecuensia o daño hacia tu persona].
+            </p>
+        </section>
+
+        <hr class="my-3">
+
+        <section id="inicio-historia" class="container">
                 <h2> Te contamos un poco de nuestra historia...</h2>
                 <div id="historia">
                     <a href="./ciudad.html">
@@ -68,122 +93,170 @@
                         <i class="link">Conoce más...</i>
                     </a>
                 </div>
-            </section>
-        </div>
+        </section>
+
+        <hr class="my-3">
 
         <section id="inicio-lugares" class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2> Nuestra ciudad tiene los mas espeluznantes lugares para pasar un escalofriante rato... queres
-                        conocerlos?...</h2>
+            <h2> Nuestra ciudad tiene los mas espeluznantes lugares para pasar un escalofriante rato... queres conocerlos?...</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 position-relative shadow-none">
+                        <span class="badge position-absolute top-0 end-0 m-2">Peligroso</span>
+                        <a href="./lugares.html">
+                            <img src="./imagenes/cementerio.jpg" class="card-img-top" alt="Cementerio">
+                        </a>
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold">
+                                Cementerio del Crepúsculo
+                            </h5>
+                            <p class="card-text">
+                                Cementerio para los no-vivos... y los vivos también.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                Las muertes por no-vivos no son juzgadas.
+                            </small>
+                        </div>
+                    </div>
                 </div>
-                <figure class="col-4">
-                    <a href="./lugares/cementerio.html">
-                        <img src="./imagenes/cementerio.jpg" alt="Cementerio">
-                    </a>
-                    <figcaption>
+                <div class="col">
+                    <div class="card h-100 position-relative shadow-none">
+                        <span class="badge position-absolute top-0 end-0 m-2">Popular</span>
                         <a href="./lugares.html">
-                            Cementerio para los no-vivos... y los vivos también.
-                            [las muertes accidentales por no-vivos no se pueden demandar]
+                            <img src="./imagenes/mansion.jpg" class="card-img-top" alt="Mansion">
                         </a>
-                    </figcaption>
-                </figure>
-                <figure class="col-4">
-                    <a href="./lugares/mansion-fantasma.html">
-                        <img src="./imagenes/mansion.jpg" alt="Mansion Embrujada">
-                    </a>
-                    <figcaption>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">
+                                La Mansión de La Bruja 
+                            </h5>
+                            <p class="card-text">
+                                La mansion embrujada por si quieres una terrorifica tarde.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                Los exorismos salen 🎃︎480.000 
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
                         <a href="./lugares.html">
-                            La mansion embrujada por si quieres una terrorifica tarde.
-                            [los exorismos salen 🎃︎480000]
+                            <img src="./imagenes/museo.jpg" class="card-img-top" alt="Museo">
                         </a>
-                    </figcaption>
-                </figure>
-                <figure class="col-4">
-                    <a href="./lugares/museo.html">
-                        <img src="./imagenes/museo.jpg" alt="Museo de los horrores">
-                    </a>
-                    <figcaption>
-                        <a href="./lugares.html">
-                            Museo para <i>revivir</i> las mejores biografias.
-                        </a>
-                    </figcaption>
-                </figure>
-                <div class="col-12">
-                    <a href="./lugares.html" class="link"><i>Visitar más...</i></a>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">
+                                Museo Sombrío
+                            </h5>
+                            <p class="card-text">
+                                Museo para <i>revivir</i> las mejores biografias.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                No nos hacemos cargo de los fantasmas.
+                            </small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <hr class="my-3">
+
+        <section id="consultas" class="container">
+            <h2>Consultas frecuentes...</h2>
+            <div class="list-group">
+                <a href="./tramites/ciudadania.html" class="list-group-item list-group-item-action">Ciudadania</a>
+                <a href="./tramites/banco.html" class="list-group-item list-group-item-action">Consulta al Banco</a>
+                <a href="./tramites/servicios.html" class="list-group-item list-group-item-action">Servicios</a>
+                <a href="./contacto.html" class="list-group-item list-group-item-action">¿Otra duda? ¡Contactanos!</a>
+            </div>
+        </section>
+
+        <hr class="my-3">
+
         <div class="container">
-            <section id="consultas">
-                <h2>Consultas frecuentes...</h2>
-                <ul>
-                    <li>
-                        <a href="./tramites/ciudadania.html">Actualizacion de Ciudadania</a>
-                    </li>
-                    <li>
-                        <a href="./tramites/banco.html">Consulta al banco.</a>
-                    </li>
-                    <li>
-                        <a href="./tramites/servicios.html">Consulta de Servicios.</a>
-                    </li>
-                    <p class="link">¿Tú duda es otra? <a href="./contacto.html">¡Contactanos!</a></p>
-                </ul>
+            <section id="unete">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./imagenes/unete.jpg" class="img-fluid rounded-start" alt="Unite">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-text">¡Formá parte de <i>nosotros</i>! </h5>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Nombre Completo</label>
+                                        <input class="form-control form-interno" id="in-nombre" placeholder="nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Fecha de Nacimiento</label>
+                                        <input type="date" class="form-control form-interno" id="in-nacimiento" placeholder="Fecha de Nacimiento">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input form-interno" id="exampleCheck1">
+                                        <label class="form-check-label" for="check">¿Otorgas tu alma?</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-form">Aceptar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
 
-        <div class="container text-center">
-            <section>
-                    <h2>Siempre tenemos un lugar... <br> ¡Formá parte de nuestro equipo!</h2>
-                    <a href="./tramites/servicios.html">
-                        <img src="./imagenes/unete.jpg" alt="unite a nosotros">
-                    </a>
-            </section>
-        </div>
-        <div class="container text-center">
+        <hr class="my-3">
+
+        <div class="container">
             <section id="noticias">
-                <h2> Ultimas Noticias.</h2>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <article>
-                            <img src="https://picsum.photos/200" alt="noticia 1">
-                            <h3>Un corte de luz deja a oscuras el barrio caníbal.</h3>
-                            <p>Los vecinos aseguran que alguien se comió el cable principal...</p>
-                            <a href="./noticias/corte-centro.html">Leer más...</a>
-                        </article>
+                <h2> Ultimas Noticias:</h2>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="Corte de Luz">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Un corte de luz deja a oscuras el barrio caníbal.</h5>
+                            <p class="card-text">Los vecinos aseguran que alguien se comió el cable principal...</p>
+                            <a href="./noticias/corte-centro.html" class="card-text"><small class="text-muted">Leer más...</small></a>
+                        </div>
                     </div>
-                    <div class="col">
-                        <article>
-                            <img src="https://picsum.photos/200" alt="noticia 2">
-                            <h3>El Rey Calabaza anuncia el concurso de la calabaza más aterradora.</h3>
-                            <p>El Parque de las Calabazas será la sede del gran concurso...</p>
-                            <a href="./noticias/festival-calabazas.html">Leer más...</a>
-                        </article>
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="El Rey Calabaza">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Rey Calabaza: Nuevo concurso de la calabaza aterradora.</h5>
+                            <p class="card-text">El Parque de las Calabazas será la sede del nuevo gran concurso de este año...</p>
+                            <a href="./noticias/festival-calabazas.html" class="card-text"><small class="text-muted">Leer mas...</small></a>
+                        </div>
                     </div>
-                    <div class="col">
-                        <article>
-                            <img src="https://picsum.photos/200" alt="noticia 3">
-                            <h3>Una sombra escapó de Hollow Bastion y fue vista en pleno día.</h3>
-                            <p>Fue encontrada debajo de un banco de la plaza, muy asustada...</p>
-                            <a href="./noticias/sombra-fugitiva.html">Leer más...</a>
-                        </article>
+                    <div class="card">
+                        <img src="" class="card-img-top fw-bold" alt="Sombra Prófuga">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Una sombra escapó de Hollow Bastion y fue vista en pleno día.</h5>
+                            <p class="card-text">Fue encontrada debajo de un banco de la plaza, muy asustada...</p>
+                            <a href="./noticias/sombra-fugitiva.html" class="card-text"><small class="text-muted">Leer mas...</small></a>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="py-3 mb-4 text-center"> 
         <p>
             <small>&copy; 1983 - 2026 Municipalidad de HalloweenTown. <br> Todos los derechos reservados.</small>
         </p>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+    <!-- JS -->
+    <script src="./js/main.js"></script>
 </body>
-<!-- JS BOOTSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous">
-</script>
 </html>

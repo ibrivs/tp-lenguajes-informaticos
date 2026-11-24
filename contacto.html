@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Creepster&family=Eater&family=Flavors&family=Griffy&family=Honk:MORF@15&family=Jacquarda+Bastarda+9&family=Kalnia+Glaze:wght@100..700&family=Nosifer&family=Rubik+Burned&family=Rubik+Glitch+Pop&family=Rubik+Puddles&family=Sixtyfour+Convergence&display=swap"
         rel="stylesheet"> <!-- CSS -->
     <!-- BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
@@ -35,86 +36,113 @@
                         <li class="nav-item"><a class="nav-link" href="./ciudad.html">Conócenos</a></li>
                         <li class="nav-item"><a class="nav-link" href="./lugares.html">Lugares turísticos</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                        <button type="button" id="boton-tema" class="boton-tema">
+                          ☀️ Modo claro
+                        </button>
                     </ul>
                 </div>
-
             </div>
-            <!-- Botón para cambiar el tema -->
-                 <button type="button" id="boton-tema" class="boton-tema">
-                  ☀️ Modo claro
-                 </button>
         </nav>
-        <div class="container title text-center">
-            <h1>Atención al Ciudadano y Espectro</h1>
-            <p>Resolvemos tus dudas paranormales <strong>desde 1983</strong>.</p>
-        </div>
+        <div class="text-secondary px-4 py-5 text-center mb-4"> 
+            <div class="py-5 title mb-4"> 
+                <h1 class="display-5">
+                    Atención al Ciudadano <span id="especie-contacto"></span>
+                </h1> 
+                <div class="col-lg-6 mx-auto"> 
+                    <p class="fs-5 mb-4"> 
+                        Resolvemos todas tus dudas paranormales, inconvenientes o reembolsos. Bueno, en realidad, solo <b>algunas</b>.
+                </div> 
+            </div> 
+        </div> 
     </header>
 
-    <main id="contacto">
-        <section id="formulario-contacto">
+    <main id="contacto" class="main-content">
+        <section id="contacto">
             <h2>Envianos tu mensaje o aparecida</h2>
-            <p>Completá el formulario para comunicarte con la Municipalidad de HalloweenTown.</p>
-
-            <!-- Formulario de contacto con validación HTML5 -->
-            <form action="#" method="post">
-                <div>
-                    <label for="nombre">Nombre o Pseudónimo Fantasma:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Jack Skellington" required>
+            <p>Por cualquier duda o queja puedes completar el siguiente formulario para comunicarte con la Municipalidad de HalloweenTown.</p>
+            <form action="#" method="post" id="formulario-contacto">
+                <div class="form-group">
+                    <label for="nombre-espectro">Nombre o Pseudónimo Fantasma:</label>
+                    <input type="text" class="form-control" id="contacto-nombre" placeholder="Ej: Jack Skellington" name="nombre">
                 </div>
-
-                <div>
+                <div class="form-group">
                     <label for="email">Correo o Frecuencia Espectral:</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@halloweentown.gob" required>
+                    <input type="email" class="form-control" id="email-contacto" name="email" placeholder="ejemplo@halloweentown.gob">
                 </div>
-
-                <div>
-                    <label for="asunto">Motivo de consulta:</label>
-                    <select id="asunto" name="asunto" required>
-                        <option value="">Seleccioná una opción...</option>
-                        <option value="tramites">Trámites y Ciudadanía Espeluznante</option>
-                        <option value="turismo">Consultas sobre Lugares Turísticos</option>
-                        <option value="reporte">Reportar actividad extraña / Avistamiento</option>
-                        <option value="empleo">Unirse al equipo municipal</option>
-                    </select>
+                <div class="form-group">
+                    <label for="años">Años de vida o de muerto:</label>
+                    <input type="number" class="form-control" id="anios-contacto" name="anios" min="0" placeholder="Ej: 150">
                 </div>
-
-                <div>
-                    <label for="mensaje">Mensaje o Manifestación:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta aquí..."
-                        required></textarea>
-                </div>
-                <div>
-                    <label for="anios">Años de vida (o de muerte):</label>
-                    <input type="number" id="anios" name="anios" min="0" placeholder="Ej: 150" required>
-                </div>
-                <div>
-                    <label for="sufrimiento">Nivel de sufrimiento:</label>
-                    <select id="sufrimiento" name="sufrimiento" required>
-                        <option value="">Seleccioná una opción...</option>
+                <div class="form-group">
+                    <label for="asunto">Nivel de sufrimiento:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected disabled>Seleccioná una opción...</option>
                         <option value="leve">Leve</option>
                         <option value="moderado">Moderado</option>
                         <option value="eterno">Eterno</option>
                     </select>
                 </div>
-
-                <button type="submit" class="btn btn-warning">Enviar al Más Allá</button>
-            </form>
+                <div class="form-group">
+                    <label for="asunto">Motivo de consulta:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected disabled>Seleccioná una opción...</option>
+                        <option value="tramites">Trámites y Ciudadanía Espeluznante</option>
+                        <option value="turismo">Consultas sobre Lugares Turísticos</option>
+                        <option value="reporte">Reportar actividad extraña / Avistamiento</option>
+                        <option value="Unirse">Unirse al equipo municipal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje" class="form-label">Mensaje o Manifestacion:</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje-contacto" rows="3" placeholder="Escribí tu consulta aquí..."></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check-contacto">
+                        <label class="form-check-label" for="checkDefault">
+                            ¿Vendiste tu alma?
+                        </label>
+                    </div>
+                </div>
+                <div class="alert d-none" role="alert" id="alerta-div">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    <span id="alert-contact"></span>
+                </div>
+                <div class="d-grid gap-2 device-width">
+                    <button type="submit" class="btn btn-form">Enviar al más allá...</button>
+                </div>
+            </form>            
         </section>
 
-        <aside id="info-contacto">
-            <h2>Canales Directos de HalloweenTown</h2>
-            <ul>
-                <li><strong>Teléfono Embrujado:</strong> <a href="tel:+54116660000">+54 11 666-0000</a></li>
-                <li><strong>Correo Oficial:</strong> <a href="mailto:info@halloweentown.gob">info@halloweentown.gob</a>
-                </li>
-                <li><strong>Atención Presencial:</strong> Plaza de la Calabaza N° 13 (Horario Nocturno)</li>
-            </ul>
-        </aside>
-    </main>
+        <hr class="my-3">
 
-    <footer>
+        <section id="info-contacto" class="container">
+            <h2>Canales Directos de HalloweenTown:</h2>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Teléfono Embrujado:</div>
+                        <a href="tel:+54116660000">+54 11 666-0000</a>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Correo Oficial:</div>
+                        <a href="mailto:info@halloweentown.gob">info@halloweentown.gob</a>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">Atención Presencial:</div>
+                        Plaza de la Calabaza N° 13 (Horario Nocturno)
+                    </div>
+                </li>
+            </ol>        
+        </section>
+    </main>
+    <footer class="py-3 mb-4 text-center"> 
         <p>
-            <small>&copy; 1983 - 2026 Municipalidad de HalloweenTown. Todos los derechos reservados.</small>
+            <small>&copy; 1983 - 2026 Municipalidad de HalloweenTown. <br> Todos los derechos reservados.</small>
         </p>
     </footer>
 
@@ -122,7 +150,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
