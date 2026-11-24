@@ -124,3 +124,36 @@ function mostrarAlerta(errores){
         alertDiv.classList.remove("d-none");
     }
 }
+
+// NOTICIAS JS
+
+const formNoticia = document.getElementById("formulario-noticia");
+const alertaNoticia = document.getElementById("alerta-noticia");
+const noticia = document.getElementById("noticia4");
+const titulo = document.getElementById("titulo");
+const subtitulo = document.getElementById("subtitulo");
+const texto = document.getElementById("texto");
+const fecha = document.getElementById("fecha");
+
+if(formNoticia){
+    formNoticia.addEventListener("submit", (e) => {
+        e.preventDefault()
+
+        const tituloNot = document.getElementById("noticia-titulo").value.trim();
+        const subtituloNot = document.getElementById("noticia-subtitulo").value.trim();
+        const infoNot = document.getElementById("informacion-noticia").value.trim();
+        const fechaNot = document.getElementById("f-creacion").value.trim();
+
+        if(tituloNot === "" || subtituloNot === "" || infoNot === "" || fechaNot === ""){
+            alertaNoticia.classList.toggle("d-none");
+            return;
+        }
+
+        noticia.classList.remove("d-none");
+        titulo.textContent = tituloNot;
+        subtitulo.textContent = subtituloNot;
+        texto.textContent = infoNot;
+        fecha.textContent = fechaNot;
+        formNoticia.classList.toggle("d-none");
+    })
+}

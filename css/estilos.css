@@ -10,7 +10,6 @@
     --fuente: "Griffy";
     --fuente-titulo: "Flavors";
     --fuente-subtitulo: "Creepster";
-    --fuente-pixel: "Coral Pixels";
 
     --borde: 2px solid var(--color-main);
 
@@ -75,7 +74,7 @@ p{
     margin: 0;
 }
 i{
-    font-family: var(--fuente-pixel);
+    font-family: "Nosifer";
 }
 b{
     font-family: "Creepster";
@@ -114,7 +113,7 @@ a{
 .badge{
     background-color: var(--color-alerta);
     color: var(--color-nav);
-    font-family: "Eater";
+    font-family: "Nosifer";
 }
 
 /* formularios */
@@ -204,3 +203,19 @@ a{
     --bs-body-color: #0c0d11;
     --bs-body-color-rgb: #0c0d11;
 }
+
+/* fuentes importadas:
+Rubik Glitch Pop
+Kalnia Glaze
+Honk
+Coral Pixels
+Griffy
+Jacquarda Bastarda 9
+Creepster
+Eater
+Nosifer
+Flavors
+Rubik Burned
+Rubik Puddles
+Sixtyfour Convergence
+*/
