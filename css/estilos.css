@@ -41,10 +41,6 @@ Sixtyfour Convergence
     margin: 0;
     padding: 0;
 }
-a{
-    color: inherit;
-    text-decoration: none;
-}
 
 /*body y generales*/
 html, body{
@@ -53,7 +49,7 @@ html, body{
 body {
     display: flex;
     flex-direction: column;
-
+    
     background-color: var(--color-negro);
     font-family: var(--fuente);
 }
@@ -88,8 +84,8 @@ footer{
     border: none;
 }
 .form-control:focus, .form-select:focus {
-  background-color: var(--color-gris-oscuro);
-  border: 0;
+    background-color: var(--color-gris-oscuro);
+    border: 0;
 }
 .btn-form {
     background-color:var(--color-violeta);
@@ -105,6 +101,7 @@ footer{
 }
 .form-interno{
     background-color: var(--color-gris);
+    color: var(--bs-body-color);
 }
 .accordion-body, .accordion-button{
     background-color: var(--color-gris-oscuro);
@@ -131,6 +128,10 @@ i{
 b{
     font-family: "Creepster";
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
 
 /* imagenes */
 .logo{
@@ -147,15 +148,27 @@ b{
 .card-footer{
     background-color: #808d89;
 }
+.list-group-item-action:not(.active):focus, .list-group-item-action:not(.active):hover{
+    background-color: var(--color-violeta);
+}
+.badge{
+    background-color: var(--color-naranja);
+    color: var(--color-violeta);
+    font-family: "Eater";
+}
+
+
+/* navbar */
+
 .navbar-halloween {
     --bs-navbar-color: var(--color-blanco);
     --bs-navbar-hover-color: none;
     border-bottom: var(--borde);
 }
-.navbar-halloween .navbar-toggler { border: none; }
-.navbar-halloween .navbar-nav { gap: 0; }
 
-/* navbar en pantallas chicas: logo a la izquierda, boton de tema y hamburguesa a la derecha */
+.navbar-halloween .navbar-toggler { border: none; }
+
+.navbar-halloween .navbar-nav { gap: 0; }
 @media (max-width: 991.98px) {
     .navbar-halloween .boton-tema {
         order: 1;
@@ -168,22 +181,6 @@ b{
     .navbar-halloween .navbar-collapse {
         order: 3;
     }
-}
-
-.actividades-cementerio {
-    margin-top: 1rem;
-}
-
-.actividades-mansion{
-    margin-top: 1rem;
-}
-
-.actividades-museo{
-    margin-top: 1rem;
-}
-
-.entradas-parque{
-    margin-top: 1rem;
 }
 
 /* boton de tema (modo claro / oscuro) */
