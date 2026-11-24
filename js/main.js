@@ -64,16 +64,18 @@ const alertaEspecie = document.getElementById("especie-alerta");
 function mostrarAlertaIndex(){
     alertaIndex.classList.toggle("d-none");
 }
-if(alertaMonstruo){
-    function mostrarAlertaModo(){
+function mostrarAlertaModo(){
+    if(alertaMonstruo){
         if(!monstruosDia.includes(localStorage.getItem("especie"))){
             alertaMonstruo.classList.remove("d-none");
             alertaEspecie.textContent = localStorage.getItem("especie")
         }
     }
-    function quitarAlerta(){
+}
+function quitarAlerta(){
+    if(alertaMonstruo){
         if(localStorage.getItem("modo") === "oscuro"){
-            alertaMonstruo.classList.add("d-none");
+            alertaMonstruo.classList.add("d-none");  
         }
     }
 }
