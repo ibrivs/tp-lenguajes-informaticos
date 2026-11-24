@@ -33,6 +33,7 @@ const alerta = document.getElementById("alert-contact");
 const alertDiv = document.getElementById("alerta-div")
 const formContact = document.getElementById("formulario-contacto");
 
+if(formContact){
     formContact.addEventListener("submit", (e) =>{
         e.preventDefault()
         const contacto =document.getElementById("contacto-nombre").value.trim();
@@ -58,3 +59,4 @@ const formContact = document.getElementById("formulario-contacto");
             alertDiv.classList.remove("d-none");
         }
     }
+}
