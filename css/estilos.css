@@ -1,39 +1,22 @@
 :root {
-    --color-violeta: #25256b;
-    --color-gris-oscuro: #4b5a56;
-    --color-gris: #556661;
-    --color-negro: #0c0d11;
-    --color-blanco:#eeeeee ;
-    --color-naranja: #ff7518;
+    --color-nav: #25256b;
+    --color-nav-claro: #36366d;
+    --color-main-oscuro: #4b5a56;
+    --color-main: #556661;
+    --color-fondo: #0c0d11;
+    --color-alerta: #ff7518;
 
     --fuente: "Griffy";
     --fuente-titulo: "Flavors";
     --fuente-subtitulo: "Creepster";
     --fuente-pixel: "Coral Pixels";
 
-    --ancho-imagen: 30rem;
-    --alto-imagen: 20rem;
-
-    --borde: 2px solid var(--color-gris-claro);
+    --borde: 2px solid var(--color-main);
 
     --bs-secondary-rgb: #fff7ee85;
     --bs-body-color: #fff7ee9c;
+    --bs-body-color-rgb: #fff7ee9c;
 }
-/* fuentes importadas:
-Rubik Glitch Pop
-Kalnia Glaze
-Honk
-Coral Pixels
-Griffy
-Jacquarda Bastarda 9
-Creepster
-Eater
-Nosifer
-Flavors
-Rubik Burned
-Rubik Puddles
-Sixtyfour Convergence
-*/
 
 /* reset basico */
 *{
@@ -50,11 +33,11 @@ body {
     display: flex;
     flex-direction: column;
     
-    background-color: var(--color-negro);
+    background-color: var(--color-fondo);
     font-family: var(--fuente);
 }
 nav {
-    background-color: var(--color-violeta);
+    background-color: var(--color-nav);
 }
 main{
     flex-grow: 1;
@@ -65,49 +48,17 @@ main{
     margin: auto;
 }
 footer{
-    background-color: var(--color-violeta);
+    background-color: var(--color-nav);
     border-top: var(--borde);
     color: var(--bs-body-color);
     margin-top: 2rem;
 }
 
 .main-content{
-    background-color: var(--color-gris);
+    background-color: var(--color-main);
     border-radius: 3px;
     padding: 3rem;
     max-width: 1100px;
-}
-
-/* formularios */
-.form-control, .form-select, .form-check-input, .list-group-item{
-    background-color: var(--color-gris-oscuro);
-    border: none;
-}
-.form-control:focus, .form-select:focus {
-    background-color: var(--color-gris-oscuro);
-    border: 0;
-}
-.btn-form {
-    background-color:var(--color-violeta);
-}
-.btn-form:hover{
-    background-color: var(--color-violeta);
-}
-.alert{
-    background-color: var(--color-naranja);
-    color: var(--color-negro);
-    text-align: center;
-    border: #0c0d11 solid 1px;
-}
-.form-interno{
-    background-color: var(--color-gris);
-    color: var(--bs-body-color);
-}
-.accordion-body, .accordion-button{
-    background-color: var(--color-gris-oscuro);
-}
-.accordion-button:focus{
-    background-color: var(--color-gris-oscuro);
 }
 
 /* texto */
@@ -128,6 +79,10 @@ i{
 b{
     font-family: "Creepster";
 }
+s{
+    text-decoration: none;
+    font-family: "Eater";
+}
 a{
     color: inherit;
     text-decoration: none;
@@ -135,33 +90,66 @@ a{
 
 /* imagenes */
 .logo{
-    height: 50px;
+    height: 4rem;
 }
 
-/* estilos inicio */
-.card{
-    background-color:#4b5a56;
-}
+/* cards */
 .card p{
     font-size: 1.1rem;
 }
 .card-footer{
     background-color: #808d89;
 }
-.list-group-item-action:not(.active):focus, .list-group-item-action:not(.active):hover{
-    background-color: var(--color-violeta);
+.list-group, .list-group-item{
+    --bs-list-group-bg: var(--color-main-oscuro);
+    --bs-list-group-border-color: var(--color-nav);
 }
+.list-group-item-action:not(.active):focus, .list-group-item-action:not(.active):hover{
+    background-color: var(--color-nav);
+}
+
+
+/* badge */
 .badge{
-    background-color: var(--color-naranja);
-    color: var(--color-violeta);
+    background-color: var(--color-alerta);
+    color: var(--color-nav);
     font-family: "Eater";
+}
+
+/* formularios */
+.fondo-oscurecido{
+    background-color:var(--color-main-oscuro);
+    color: var(--bs-body-color);
+}
+.form-control:focus, .form-select:focus {
+    background-color: var(--color-main-oscuro);
+    border: 0;
+}
+.btn-form {
+    background-color:var(--color-nav);
+}
+.btn-form:hover{
+    background-color: var(--color-nav-claro);
+}
+.alert{
+    background-color: var(--color-alerta);
+    color: var(--color-fondo);
+    text-align: center;
+    border: #0c0d11 solid 1px;
+}
+.form-interno{
+    background-color: var(--color-main);
+    --bs-body-bg: var(--color-gris-oscuro);
+    border: none;
+}
+.accordion-body, .accordion-button, .accordion-button:focus{
+    background-color: var(--color-main-oscuro);
 }
 
 
 /* navbar */
-
 .navbar-halloween {
-    --bs-navbar-color: var(--color-blanco);
+    --bs-navbar-color: var(--bs-body-color);
     --bs-navbar-hover-color: none;
     border-bottom: var(--borde);
 }
@@ -169,6 +157,7 @@ a{
 .navbar-halloween .navbar-toggler { border: none; }
 
 .navbar-halloween .navbar-nav { gap: 0; }
+
 @media (max-width: 991.98px) {
     .navbar-halloween .boton-tema {
         order: 1;
@@ -185,9 +174,9 @@ a{
 
 /* boton de tema (modo claro / oscuro) */
 .boton-tema {
-    background-color: var(--color-naranja);
-    color: var(--color-negro);
-    border: 2px solid var(--color-naranja);
+    background-color: var(--color-alerta);
+    color: var(--color-fondo);
+    border: 2px solid var(--color-alerta);
     border-radius: 999px;
     padding: 0.35rem 1rem;
     font-family: var(--fuente);
@@ -196,35 +185,47 @@ a{
 }
 
 .boton-tema:hover {
-    background-color: var(--color-blanco);
-    color: var(--color-negro);
+    background-color: var(--bs-body-color);
+    color: var(--color-fondo);
 }
 
 /* MODO CLARO */
+.light-mode{
+    --color-nav: #b8b8e8;
+    --color-nav-claro: #36366d;
+    --color-main-oscuro: #4b5a56;
+    --color-main: #d6d6e8;
+    --color-fondo: #ece0d8;
+    --color-alerta: #e7b836;
+
+    --bs-secondary-rgb: #25256b;
+    --bs-body-color: #0c0d11;
+    --bs-body-color-rgb: #0c0d11;
+}
 body.light-mode {
     background-color: #eeeeee;
-    color: #0c0d11;
+    color: var(--bs-body-color);
 }
 
 body.light-mode header {
-    color: #0c0d11;
+    color: var(--bs-body-color);
 }
 
 body.light-mode main {
     background-color: #d6d6e8;
-    color: #0c0d11;
+    color: var(--bs-body-color);
 }
 
 body.light-mode nav,
 body.light-mode footer {
-    background-color: #b8b8e8;
-    color: #0c0d11;
+    background-color: var(--color-nav);
+    color:var(--bs-body-color);
 }
 
 body.light-mode a {
-    color: #25256b;
+    color: var(--bs-secondary-rgb);
 }
 
 body.light-mode h2 {
-    color: #0c0d11;
+    color:var(--bs-body-color);
 }

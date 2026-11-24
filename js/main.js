@@ -2,36 +2,95 @@
 const botonTema = document.getElementById("boton-tema");
 
 botonTema.addEventListener("click", () => {
-
-    document.body.classList.toggle("light-mode");
-
     if (document.body.classList.contains("light-mode")) {
-        botonTema.textContent = "🌙 Modo oscuro";
+        activarModoOscuro();
+        quitarAlerta();
     } else {
-        botonTema.textContent = "☀️ Modo claro";
+        mostrarAlertaModo();
+        activarModoclaro();
     }
-
 });
 
-// INDEX JS
-const nombre = document.getElementById("input-nombre");
-const formIndex = document.getElementById("index-form");
-const select = document.getElementById("especie");
-
-if(formIndex){
-
-    formIndex.addEventListener("submit", (e) =>{
-        e.preventDefault();
-    
-        window.location.href = "inicio.html"
-    })
+function activarModoclaro(){
+    botonTema.textContent = "🌙 Modo oscuro";
+    document.body.classList.add("light-mode");
+    localStorage.setItem("modo", "claro");
 }
 
+function activarModoOscuro(){
+    botonTema.textContent = "☀️ Modo claro";
+    localStorage.setItem("modo", "oscuro");
+    document.body.classList.remove("light-mode")
+}
+
+function verificarModo(){
+    if(localStorage.getItem("modo") === "claro"){
+        activarModoclaro()
+    }
+}
+
+verificarModo();
+
+// INDEX JS
+const formIndex = document.getElementById("index-form");
+const alertaIndex = document.getElementById("alerta-index");
+const monstruosDia = ["monstruo","bruja"]
+if(formIndex){
+    
+    formIndex.addEventListener("submit", (e) =>{
+        e.preventDefault();
+        const nombre = document.getElementById("input-nombre").value.trim();
+        const especieSelect = document.getElementById("especie").value.trim();
+        
+        if(nombre === "" || especieSelect === ""){
+            mostrarAlertaIndex();
+            return;
+        }
+        if(monstruosDia.includes(especieSelect)){
+            activarModoclaro();
+        } else{
+            activarModoOscuro();
+        }
+        localStorage.setItem("nombre", nombre);
+        localStorage.setItem("especie", especieSelect);
+
+        window.location.href = "inicio.html";
+    })
+
+}
+const alertaMonstruo = document.getElementById("alerta-monstruo");
+const alertaEspecie = document.getElementById("especie-alerta");
+
+function mostrarAlertaIndex(){
+    alertaIndex.classList.toggle("d-none");
+}
+if(alertaMonstruo){
+    function mostrarAlertaModo(){
+        if(!monstruosDia.includes(localStorage.getItem("especie"))){
+            alertaMonstruo.classList.remove("d-none");
+            alertaEspecie.textContent = localStorage.getItem("especie")
+        }
+    }
+    function quitarAlerta(){
+        if(localStorage.getItem("modo") === "oscuro"){
+            alertaMonstruo.classList.add("d-none");
+        }
+    }
+}
+
+// INICIO JS
+
+const inicioNombre = document.getElementById("bnv-nombre");
+
+if(inicioNombre){
+    inicioNombre.textContent = localStorage.getItem("nombre") ;
+}
 // CONTACTO JS
 
 const alerta = document.getElementById("alert-contact");
 const alertDiv = document.getElementById("alerta-div")
 const formContact = document.getElementById("formulario-contacto");
+const especieContacto = document.getElementById("especie-contacto");
 
 if(formContact){
     formContact.addEventListener("submit", (e) =>{
@@ -53,10 +112,13 @@ if(formContact){
         }
         mostrarAlerta(errores);
     });
-    function mostrarAlerta(errores){
-        if(errores.length > 0){
-            alerta.textContent = errores.join(" ");
-            alertDiv.classList.remove("d-none");
-        }
+
+    especieContacto.textContent = `y a ${localStorage.getItem("especie")}s`
+
+}
+function mostrarAlerta(errores){
+    if(errores.length > 0){
+        alerta.textContent = errores.join(" ");
+        alertDiv.classList.remove("d-none");
     }
 }

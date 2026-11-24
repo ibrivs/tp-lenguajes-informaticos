@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Creepster&family=Eater&family=Flavors&family=Griffy&family=Honk:MORF@15&family=Jacquarda+Bastarda+9&family=Kalnia+Glaze:wght@100..700&family=Nosifer&family=Rubik+Burned&family=Rubik+Glitch+Pop&family=Rubik+Puddles&family=Sixtyfour+Convergence&display=swap"
         rel="stylesheet">
     <!-- BOOTSTRAP-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
@@ -43,17 +44,23 @@
                 </div>
             </div>
         </nav>
+        <div class="container text-center">
+            <div class="alert d-none" role="alert" id="alerta-monstruo">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <p> Este modo puede ser dañino para <span id="especie-alerta"></span>s.</p>
+            </div>
+        </div>
         <div class="text-secondary px-4 py-5 text-center mb-4"> 
             <div class="py-5 title mb-4"> 
                 <h1 class="display-5">
-                    Te damos la bienvenida <span id="nombre"></span>a HalloweenTown 
+                    Te damos la bienvenida <s><span id="bnv-nombre"></span></s> a HalloweenTown 
                 </h1> 
                 <div class="col-lg-6 mx-auto"> 
                     <p class="fs-5 mb-4"> 
                         ¿No has querido visitar un lugar tan espectacularmente asombroso 
                         que te vuele los sesos del cráneo y saques tus ojos de sus órbitas oculares? 
                         Pues estás de suerte porque te damos la bienvenida a HalloweenTown
-                        una ciudad llena de caos, terror y diversión para todas las edades, inclusive para los muertos <b>JAJAJAJAJAA</b>
+                        una ciudad llena de caos, terror y diversión para todas las edades, inclusive para los muertos <i>JAJAJAJAJAA</i>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
                         <a class="btn btn-lg px-4 me-sm-3 fw-bold" href="#inicio">
                             Continuar
@@ -101,7 +108,7 @@
             <h2> Nuestra ciudad tiene los mas espeluznantes lugares para pasar un escalofriante rato... queres conocerlos?...</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card h-100 position-relative shadow-none">
+                    <div class="card h-100 position-relative shadow-none fondo-oscurecido">
                         <span class="badge position-absolute top-0 end-0 m-2">Peligroso</span>
                         <a href="./lugares.html">
                             <img src="./imagenes/cementerio.jpg" class="card-img-top" alt="Cementerio">
@@ -122,7 +129,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 position-relative shadow-none">
+                    <div class="card h-100 position-relative shadow-none fondo-oscurecido">
                         <a href="./lugares.html">
                             <img src="./imagenes/mansion.jpg" class="card-img-top" alt="Mansion">
                         </a>
@@ -142,7 +149,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 fondo-oscurecido">
                         <a href="./lugares.html">
                             <img src="./imagenes/museo.jpg" class="card-img-top" alt="Museo">
                         </a>
@@ -180,7 +187,7 @@
 
         <div class="container">
             <section id="unete">
-                <div class="card mb-3">
+                <div class="card mb-3 fondo-oscurecido">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="./imagenes/unete.jpg" class="img-fluid rounded-start" alt="Unite">
@@ -216,28 +223,34 @@
             <section id="noticias">
                 <h2> Ultimas Noticias:</h2>
                 <div class="card-group">
-                    <div class="card">
-                        <img src="" class="card-img-top" alt="Corte de Luz">
+                    <div class="card fondo-oscurecido">
+                        <img src="./imagenes/sinluz.jpg" class="card-img-top" alt="Corte de Luz">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Un corte de luz deja a oscuras el barrio caníbal.</h5>
                             <p class="card-text">Los vecinos aseguran que alguien se comió el cable principal...</p>
-                            <a href="./noticias/ultimas-noticias.html" class="card-text"><small class="text-muted">Leer más...</small></a>
+                            <b>
+                                <a href="./noticias/ultimas-noticias.html" class="card-text"><small class="text-muted">Leer más...</small></a>
+                            </b>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="" class="card-img-top" alt="El Rey Calabaza">
+                    <div class="card fondo-oscurecido">
+                        <img src="./imagenes/navidad.jpg" class="card-img-top" alt="El Rey Calabaza">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Rey Calabaza: Nuevo concurso de la calabaza aterradora.</h5>
                             <p class="card-text">El Parque de las Calabazas será la sede del nuevo gran concurso de este año...</p>
-                            <a href="./noticias/ultimas-noticias.html" class="card-text"><small class="text-muted">Leer mas...</small></a>
+                            <b>
+                                <a href="./noticias/ultimas-noticias.html" class="card-text"><small class="text-muted">Leer mas...</small></a>
+                            </b>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="" class="card-img-top fw-bold" alt="Sombra Prófuga">
+                    <div class="card fondo-oscurecido">
+                        <img src="./imagenes/sombra.jpg" class="card-img-top fw-bold" alt="Sombra Prófuga">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Una sombra escapó de Hollow Bastion y fue vista en pleno día.</h5>
                             <p class="card-text">Fue encontrada debajo de un banco de la plaza, muy asustada...</p>
-                            <a href="./noticias/ultimas-noticias.html" class="card-text"><small class="text-muted">Leer mas...</small></a>
+                            <b>
+                                <a href="./noticias/ultimas-noticias.html" class="card-text"><small class="text-muted">Leer mas...</small></a>
+                            </b>
                         </div>
                     </div>
                 </div>

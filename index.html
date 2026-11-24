@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Creepster&family=Eater&family=Flavors&family=Griffy&family=Honk:MORF@15&family=Jacquarda+Bastarda+9&family=Kalnia+Glaze:wght@100..700&family=Nosifer&family=Rubik+Burned&family=Rubik+Glitch+Pop&family=Rubik+Puddles&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">    <!-- CSS -->
     <!-- BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
@@ -43,20 +44,24 @@
                     <div class="col-md-10 mx-auto col-lg-5 rounded-3"> 
                         <form class="p-4 p-md-5 border rounded-3 form-index main-content" id="index-form"> 
                             <div class="form-floating mb-3"> 
-                                <input class="form-control" id="input-nombre" placeholder="name"> 
+                                <input class="form-control fondo-oscurecido border-0" id="input-nombre" placeholder="name"> 
                                 <label for="floatingInput">Nombre</label> 
                             </div> 
-                            <div class=" mb-3"> 
-                                <select id="especie" class="form-select" aria-label="Default select example">
-                                    <option selected disabled> Especie </option>
-                                    <option value="1"> Monstruo </option>
-                                    <option value="2"> Vampiro </option>
-                                    <option value="3"> Hombre Lobo </option>
-                                    <option value="4"> Bruja </option>
-                                    <option value="5"> Espectro </option>
-                                    <option value="6" disabled> Humano </option>
+                            <div class="mb-3"> 
+                                <select id="especie" class="form-select fondo-oscurecido border-0" aria-label="Default select example">
+                                    <option value="" selected disabled> Especie </option>
+                                    <option value="monstruo"> Monstruo </option>
+                                    <option value="vampiro"> Vampiro </option>
+                                    <option value="licantropo"> Licantropo </option>
+                                    <option value="bruja"> Bruja </option>
+                                    <option value="espectro"> Espectro </option>
+                                    <option value="humano" disabled> Humano </option>
                                 </select>
                             </div> 
+                            <div class="alert d-none" role="alert" id="alerta-index">
+                                <i class="bi bi-exclamation-triangle-fill"></i>
+                                <small> Completa ambos valores.</small>
+                            </div>
                             <button class="w-100 btn btn-form" type="submit" href="./inicio.html" id="index-btn">
                                 Entrar
                             </button> 
