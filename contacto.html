@@ -62,26 +62,26 @@
         </div> 
     </header>
 
-    <main id="contacto" class="main-content">
+    <main class="main-content">
         <section id="contacto">
             <h2>Envianos tu mensaje o aparecida</h2>
             <p>Por cualquier duda o queja puedes completar el siguiente formulario para comunicarte con la Municipalidad de HalloweenTown.</p>
             <form method="post" id="formulario-contacto">
                 <div class="form-group">
-                    <label for="nombre-espectro">Nombre o Pseudónimo Fantasma:</label>
+                    <label for="contacto-nombre">Nombre o Pseudónimo Fantasma:</label>
                     <input type="text" class="form-control fondo-oscurecido border-0" id="contacto-nombre" placeholder="Ej: Jack Skellington" name="nombre">
                 </div>
                 <div class="form-group">
-                    <label for="email">Correo o Frecuencia Espectral:</label>
+                    <label for="email-contacto">Correo o Frecuencia Espectral:</label>
                     <input class="form-control fondo-oscurecido border-0" id="email-contacto" name="email" placeholder="ejemplo@halloweentown.gob">
                 </div>
                 <div class="form-group">
-                    <label for="años">Años de vida o de muerto:</label>
+                    <label for="anios-contacto">Años de vida o de muerto:</label>
                     <input type="number" class="form-control fondo-oscurecido border-0" id="anios-contacto" name="anios" min="0" placeholder="Ej: 150">
                 </div>
                 <div class="form-group">
-                    <label for="asunto">Nivel de sufrimiento:</label>
-                    <select class="form-select fondo-oscurecido border-0" aria-label="Default select example">
+                    <label for="sufrimiento-contacto">Nivel de sufrimiento:</label>
+                    <select id="sufrimiento-contacto" class="form-select fondo-oscurecido border-0">
                         <option selected disabled>Seleccioná una opción...</option>
                         <option value="leve">Leve</option>
                         <option value="moderado">Moderado</option>
@@ -89,8 +89,8 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="asunto">Motivo de consulta:</label>
-                    <select class="form-select fondo-oscurecido border-0" aria-label="Default select example">
+                    <label for="asunto-contacto">Motivo de consulta:</label>
+                    <select id="asunto-contacto" class="form-select fondo-oscurecido border-0">
                         <option selected disabled>Seleccioná una opción...</option>
                         <option value="tramites">Trámites y Ciudadanía Espeluznante</option>
                         <option value="turismo">Consultas sobre Lugares Turísticos</option>
@@ -99,13 +99,13 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="mensaje" class="form-label">Mensaje o Manifestacion:</label>
+                    <label for="mensaje-contacto" class="form-label">Mensaje o Manifestacion:</label>
                     <textarea class="form-control fondo-oscurecido border-0" name="mensaje" id="mensaje-contacto" rows="3" placeholder="Escribí tu consulta aquí..."></textarea>
                 </div>
                 <div class="form-group">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="check-contacto">
-                        <label class="form-check-label" for="checkDefault">
+                        <label class="form-check-label" for="check-contacto">
                             ¿Vendiste tu alma?
                         </label>
                     </div>
