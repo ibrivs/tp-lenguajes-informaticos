@@ -41,6 +41,12 @@
                 </button>
             </div>
         </nav>
+        <div class="container text-center">
+            <div class="alert d-none" role="alert" id="alerta-monstruo">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <p> Este modo puede resultar dañino para <span id="especie-alerta"></span>s.</p>
+            </div>
+        </div>
         <div class="text-secondary px-4 py-5 text-center mb-4"> 
             <div class="py-5 title mb-4"> 
                 <h1 class="display-5">
@@ -146,10 +152,10 @@
         <hr class="my-3">
 
         <section id="crear-noticia" class="container">
-            <h2>
-                ¿Quieres crear tu proopia noticia?
-            </h2>
             <form action="#" method="post" id="formulario-noticia">
+                <h2>
+                    ¿Quieres crear tu proopia noticia?
+                </h2>
                 <div class="form-group">
                     <label for="titulo">Titulo de la noticia:</label>
                     <input type="text" class="form-control fondo-oscurecido border-0" id="noticia-titulo" placeholder="Ej: Un día oscuro en HalloweenTown..." name="titulo">

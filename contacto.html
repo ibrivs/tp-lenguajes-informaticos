@@ -43,6 +43,12 @@
                 </div>
             </div>
         </nav>
+        <div class="container text-center">
+            <div class="alert d-none" role="alert" id="alerta-monstruo">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <p> Este modo puede resultar dañino para <span id="especie-alerta"></span>s.</p>
+            </div>
+        </div>
         <div class="text-secondary px-4 py-5 text-center mb-4"> 
             <div class="py-5 title mb-4"> 
                 <h1 class="display-5">
@@ -60,14 +66,14 @@
         <section id="contacto">
             <h2>Envianos tu mensaje o aparecida</h2>
             <p>Por cualquier duda o queja puedes completar el siguiente formulario para comunicarte con la Municipalidad de HalloweenTown.</p>
-            <form action="#" method="post" id="formulario-contacto">
+            <form method="post" id="formulario-contacto">
                 <div class="form-group">
                     <label for="nombre-espectro">Nombre o Pseudónimo Fantasma:</label>
                     <input type="text" class="form-control fondo-oscurecido border-0" id="contacto-nombre" placeholder="Ej: Jack Skellington" name="nombre">
                 </div>
                 <div class="form-group">
                     <label for="email">Correo o Frecuencia Espectral:</label>
-                    <input type="email" class="form-control fondo-oscurecido border-0" id="email-contacto" name="email" placeholder="ejemplo@halloweentown.gob">
+                    <input class="form-control fondo-oscurecido border-0" id="email-contacto" name="email" placeholder="ejemplo@halloweentown.gob">
                 </div>
                 <div class="form-group">
                     <label for="años">Años de vida o de muerto:</label>
@@ -111,7 +117,14 @@
                 <div class="d-grid gap-2 device-width">
                     <button type="submit" class="btn btn-form">Enviar al más allá...</button>
                 </div>
-            </form>            
+            </form>
+
+            <div class="alert alert-success my-3 d-none" role="alert" id="alerta-enviado">
+                <h3 class="alert-heading">¡Se ha enviado la consulta con éxito!</h4>
+                <p> Responderemos antes de que se encuentre en el más allá.</p>
+                <hr>
+                <p class="mb-0">Tal vez.</p>
+            </div>
         </section>
 
         <hr class="my-3">

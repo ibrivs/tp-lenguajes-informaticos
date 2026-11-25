@@ -47,7 +47,7 @@
         <div class="container text-center">
             <div class="alert d-none" role="alert" id="alerta-monstruo">
                 <i class="bi bi-exclamation-triangle-fill"></i>
-                <p> Este modo puede ser dañino para <span id="especie-alerta"></span>s.</p>
+                <p> Este modo puede resultar dañino para <span id="especie-alerta"></span>s.</p>
             </div>
         </div>
         <div class="text-secondary px-4 py-5 text-center mb-4"> 
@@ -190,27 +190,32 @@
                 <div class="card mb-3 fondo-oscurecido">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="./imagenes/unete.jpg" class="img-fluid rounded-start" alt="Unite">
+                            <img src="./imagenes/unete.jpg" class="img-fluid rounded-start" alt="Unite" id="imagen-unete">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-text">¡Formá parte de <b>nosotros</b>! </h5>
-                                <form>
+                                <h5 class="card-text" id="texto-unete">¡Formá parte de <b>nosotros</b>! </h5>
+                                <form id="form-unete">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Nombre Completo</label>
+                                        <label for="nombre">Nombre Completo</label>
                                         <input class="form-control form-interno" id="in-nombre" placeholder="Ej: Damon Jack Skeleton">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Fecha de Nacimiento</label>
+                                        <label for="f-nac">Fecha de Nacimiento</label>
                                         <input type="date" class="form-control form-interno" id="in-nacimiento" placeholder="Fecha de Nacimiento">
                                     </div>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input form-interno" id="exampleCheck1">
-                                        <label class="form-check-label" for="check">¿Otorgas tu alma?</label>
+                                        <input type="checkbox" class="form-check-input form-interno" id="check-unete">
+                                        <label class="form-check-label" for="check">¿Nos otorgas tu alma?</label>
                                     </div>
-                                    <button type="submit" class="btn btn-form">Aceptar</button>
+                                        <button type="submit" class="btn btn-form  btn-sm">Aceptar</button>
                                 </form>
                             </div>
+                        </div>
+                        <div class="alert my-1" role="alert" id="alerta-unete">
+                            <i class="bi bi-exclamation-circle"></i>
+                                ¡Por favor completa la solicitud! ¡Y asegurate de aceptar <b>todos </b> los términos!
+                            <i class="bi bi-exclamation-circle"></i>
                         </div>
                     </div>
                 </div>

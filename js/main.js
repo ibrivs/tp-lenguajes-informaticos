@@ -83,9 +83,28 @@ function quitarAlerta(){
 // INICIO JS
 
 const inicioNombre = document.getElementById("bnv-nombre");
+const formUnete = document.getElementById("form-unete");
+const alertaUnete = document.getElementById("alerta-unete");
+const textoUnete = document.getElementById("texto-unete");
+const imagenUnete = document.getElementById("imagen-unete");
 
-if(inicioNombre){
+if(formUnete){
     inicioNombre.textContent = localStorage.getItem("nombre") ;
+
+    formUnete.addEventListener("submit", (e) =>{
+        e.preventDefault();
+        const nombre = document.getElementById("in-nombre").value.trim();
+        const fecha = document.getElementById("in-nacimiento").value;
+        const check = document.getElementById("check-unete");
+
+        if(nombre === "" || fecha === "" || !check.checked){
+            return;
+        }
+        formUnete.classList.add("d-none");
+        alertaUnete.classList.add("d-none");
+        textoUnete.innerHTML = `Gracias por unirte a <s> nosotros </s> ${localStorage.getItem("nombre")}`
+        imagenUnete.src = "./imagenes/sacrificio.jpg"
+    })
 }
 // CONTACTO JS
 
@@ -93,6 +112,7 @@ const alerta = document.getElementById("alert-contact");
 const alertDiv = document.getElementById("alerta-div")
 const formContact = document.getElementById("formulario-contacto");
 const especieContacto = document.getElementById("especie-contacto");
+const alertaEnviado = document.getElementById("alerta-enviado");
 
 if(formContact){
     formContact.addEventListener("submit", (e) =>{
@@ -101,7 +121,7 @@ if(formContact){
         const mensaje =document.getElementById("mensaje-contacto").value.trim();
         const mail =document.getElementById("email-contacto").value.trim();
 
-        errores = [];
+        const errores = [];
 
         if(contacto.length < 3){
             errores.push("El nombre no puede estar vacio. ");
@@ -111,8 +131,12 @@ if(formContact){
         }
         if(mail === ""){
             errores.push("La forma de comunicacion no puede estar vacia. ")
+            mostrarAlerta(errores);
+            return;
         }
+        formContact.reset();
         mostrarAlerta(errores);
+
     });
 
     especieContacto.textContent = `y a ${localStorage.getItem("especie")}s`
@@ -122,6 +146,8 @@ function mostrarAlerta(errores){
     if(errores.length > 0){
         alerta.textContent = errores.join(" ");
         alertDiv.classList.remove("d-none");
+    }else{
+        alertaEnviado.classList.toggle("d-none");
     }
 }
 
