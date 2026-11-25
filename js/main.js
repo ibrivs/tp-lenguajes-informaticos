@@ -124,16 +124,20 @@ if(formContact){
         const errores = [];
 
         if(contacto.length < 3){
-            errores.push("El nombre no puede estar vacio. ");
+            errores.push("El nombre debe tener al menos 3 letras. ");
         }
         if(mensaje === ""){
             errores.push("El mensaje no puede estar vacio. ");
         }
         if(mail === ""){
-            errores.push("La forma de comunicacion no puede estar vacia. ")
+            errores.push("La forma de comunicacion no puede estar vacia. ");
+        }
+        if(errores.length > 0){
             mostrarAlerta(errores);
             return;
         }
+        formContact.reset();
+        mostrarAlerta(errores);
         formContact.reset();
         mostrarAlerta(errores);
 
@@ -146,11 +150,12 @@ function mostrarAlerta(errores){
     if(errores.length > 0){
         alerta.textContent = errores.join(" ");
         alertDiv.classList.remove("d-none");
+        alertaEnviado.classList.add("d-none");
     }else{
-        alertaEnviado.classList.toggle("d-none");
+        alertDiv.classList.add("d-none");
+        alertaEnviado.classList.remove("d-none");
     }
 }
-
 // NOTICIAS JS
 
 const formNoticia = document.getElementById("formulario-noticia");
