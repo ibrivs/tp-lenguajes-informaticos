@@ -5,7 +5,9 @@
     --color-main-claro: #808d89;
     --color-main: #556661;
     --color-fondo: #0c0d11;
-    --color-alerta: #ff7518;
+    --color-alerta: #df3308;
+    --color-titulo: #ff7518;
+    --color-titulo-seccion: #ffa45e;
 
     --fuente: "Griffy";
     --fuente-titulo: "Flavors";
@@ -64,10 +66,12 @@ footer{
 /* texto */
 h1{
     font-family: var(--fuente-titulo);
+    color:var(--color-titulo)
 }
 h2{
     font-size: 1.6rem;
     font-weight: bold;
+    color:var(--color-titulo-seccion)
 }
 p{
     font-size: 1.25rem;
@@ -198,6 +202,8 @@ a{
     --color-main: #d6e8dc;
     --color-fondo: #eaeff1;
     --color-alerta: #e7b836;
+    --color-titulo: #963b00;
+    --color-titulo-seccion: #8a3600;
 
     --bs-secondary-rgb: #25256b;
     --bs-body-color: #0c0d11;
