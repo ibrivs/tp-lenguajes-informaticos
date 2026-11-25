@@ -1,6 +1,13 @@
 # Halloweentown
+Proyecto de pagina de desarrolo web de una ciudad irreal para la materia Lenguajes Informaticos. Con implementacion de HTML, CSS y JavaScript.
 
-## Descripción general
+### Integrantes 
+- Abril Varas
+- Martin Yuffrida 
+- Sabrina Calderon
+- Thomas Ayala
+
+## Descripción general De la Ciudad
 
 La idea general de este universo consiste en un extenso país compuesto
 por numerosas ciudades, cada una inspirada en una festividad o estación

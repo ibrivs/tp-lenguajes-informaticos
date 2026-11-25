@@ -1,13 +1,13 @@
 :root {
     --color-nav: #25256b;
     --color-nav-claro: #36366d;
-    --color-main-oscuro: #4b5657;
-    --color-main-claro: #728688;
-    --color-main: #556566;
+    --color-main-oscuro: #405153;
+    --color-main-claro: #667576;
+    --color-main: #4c5b5c;
     --color-fondo: #0c0d11;
     --color-alerta: #df3308;
     --color-titulo: #af5023de;
-    --color-titulo-seccion: #e07f4794;
+    --color-titulo-seccion: #f9a06c94;
 
     --fuente: "Griffy";
     --fuente-titulo: "Flavors";
@@ -15,9 +15,9 @@
 
     --borde: 2px solid var(--color-main);
 
-    --bs-secondary-rgb: #eec08c85;
-    --bs-body-color: #eec08c85;
-    --bs-body-color-rgb: #eec08c85;
+    --bs-secondary-rgb: #fde0bf85;
+    --bs-body-color: #fde0bf85;
+    --bs-body-color-rgb: #fde0bf85;
 }
 
 /* reset basico */
