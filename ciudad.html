@@ -58,26 +58,325 @@
             </div> 
         </div> 
     </header>
-    <main class="main-content">
-        <h2>Halloweentown, la gran ciudad del terror</h2>
-        <p>
-            ¡Bienvenidos todos los seres! ¿acaso buscas un lugar extraordinario en donde descansar después de una vida tan agotadora?
-            Pues está de suerte porque el día de hoy le presentamos un lugar reservado única y exclusivamente para usted: 
-            Nuestra gran y hermosa ciudad de terror. 
-            Les va a encantar tanto que, aun estando muertos, no querrán irse de esta espeluznante ciudad. 
-            Desde los barrios caníbales hasta el pantano de las brujas y los monstruos acuáticos, podrán explorar cada rincón de esta enorme 
-            capital del terror como si fueran uno más de sus habitantes. Como bien dice nuestro gran señor Calabaza: Sin terror no habrá diversión, ese es nuestro fin, vivir eternamente en halloween.
-            Puedes ver todo lo que tenemos para mostrarte en nuestras demás páginas, así que, por favor, échale ambos ojos antes de que los pierdas. 
-        </p>
-        <p>
-            Hace mucho tiempo, cuando apenas existían tres ciudades en el mundo, cada 31 de octubre se celebraba un gran festejo en un inmenso jardín de calabazas.
-             Durante esa noche, la energía pagana crecía sin detenerse hasta que, un día, todo ese poder se concentró en una sola calabaza.
-             Al instante, esta cobró vida con una fuerza abrumadora y se alzó como el Rey Calabaza. Con su nuevo poder, se dirigió a un pequeño pueblo fantasma 
-             y lo transformó en una gran ciudad llena de vida: Halloweentown. 
-             Poco a poco, distintas criaturas fantásticas acudieron al lugar y lo convirtieron en su hogar.</p>
-        </p>
+     <main class="main-content">
+
+        <!-- Presentación -->
+        <section id="presentacion" class="container">
+            <h2>Bienvenidos, todos los seres</h2>
+            <p>
+                ¿Acaso buscas un lugar extraordinario en donde descansar después de una vida tan agotadora?
+                Pues estás de suerte: hoy te presentamos un lugar reservado única y exclusivamente para ti,
+                nuestra gran y hermosa ciudad de terror. Te va a encantar tanto que, aun estando muerto,
+                no querrás irte de esta espeluznante ciudad.
+            </p>
+            <p class="mt-3">
+                Desde los barrios caníbales hasta el pantano de las brujas y los monstruos acuáticos,
+                podrás explorar cada rincón de esta enorme capital del terror como si fueras uno más de sus habitantes.
+                Y échale ambos ojos a todo lo que tenemos para mostrarte, antes de que los pierdas.
+            </p>
+
+            <nav aria-label="Secciones de esta página" class="mt-4 text-center bg-transparent">
+                <a class="btn btn-form m-1" href="#postales">Postales</a>
+                <a class="btn btn-form m-1" href="#datos-clave">Datos clave</a>
+                <a class="btn btn-form m-1" href="#historia">Historia</a>
+                <a class="btn btn-form m-1" href="#barrios">Barrios</a>
+                <a class="btn btn-form m-1" href="#costumbres">Costumbres</a>
+                
+            </nav>
+        </section>
+
+        <hr class="my-3">
+
+        <!-- Postales de la ciudad -->
+        <section id="postales" class="container">
+            <h2>Postales de HalloweenTown</h2>
+            <div class="col-md-10 col-lg-6 mx-auto">
+                <div id="carrusel-ciudad" class="carousel slide" data-bs-ride="carousel" aria-label="Postales de HalloweenTown">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carrusel-ciudad" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Postal 1"></button>
+                        <button type="button" data-bs-target="#carrusel-ciudad" data-bs-slide-to="1" aria-label="Postal 2"></button>
+                        <button type="button" data-bs-target="#carrusel-ciudad" data-bs-slide-to="2" aria-label="Postal 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="./imagenes/calabaza.jpg" class="d-block w-100" alt="Calabaza tallada con una sonrisa siniestra, pintada al óleo">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>La calabaza</h3>
+                                <p>El símbolo de HalloweenTown y de su fundador.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./imagenes/sombra.jpg" class="d-block w-100" alt="Silueta de una sombra con ojos brillantes sentada en un árbol seco, junto a dos cuervos">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Hollow Bastion</h3>
+                                <p>Cuando cae la noche, las sombras salen a pasear.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./imagenes/navidad.jpg" class="d-block w-100" alt="Criatura esquelética con astas decoradas con luces de colores y ojos brillantes">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>La Navidad</h3>
+                                <p>Nuestra fiesta favorita, a la manera de HalloweenTown.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-ciudad" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel-ciudad" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-3">
+
+        <!-- Lo que nos define -->
+        <section id="identidad" class="container">
+            <h2>Lo que nos define</h2>
+            <blockquote class="blockquote">
+                <p>Sin terror no habrá diversión, ese es nuestro fin: <em>vivir eternamente en Halloween.</em></p>
+            </blockquote>
+            <p class="mb-3"><small>— Nuestro gran señor Calabaza</small></p>
+            <p>
+                La característica fundamental de HalloweenTown es que tanto la ciudad como todos sus habitantes existen
+                con un único propósito: <strong>provocar miedo</strong>. Para ellos, el terror no es simplemente
+                una característica, sino la razón misma de su existencia. Lo hagan de manera consciente o inconsciente,
+                todos sus habitantes tienen una naturaleza orientada a generar temor, y ese es el aspecto
+                más importante de nuestra identidad.
+            </p>
+        </section>
+
+        <hr class="my-3">
+
+        <!-- Datos clave -->
+        <section id="datos-clave" class="container">
+            <h2>Datos clave de la ciudad</h2>
+            <div class="row g-4">
+                <div class="col-12">
+                    <dl class="row">
+                        <dt class="col-sm-4 mb-2">Nombre</dt>
+                        <dd class="col-sm-8 mb-2">HalloweenTown, la gran ciudad del terror</dd>
+
+                        <dt class="col-sm-4 mb-2">Fundador</dt>
+                        <dd class="col-sm-8 mb-2">El Rey Calabaza</dd>
+
+                        <dt class="col-sm-4 mb-2">Año de fundación</dt>
+                        <dd class="col-sm-8 mb-2">1983</dd>
+
+                        <dt class="col-sm-4 mb-2">Población</dt>
+                        <dd class="col-sm-8 mb-2">666.000 habitantes (y aumenta durante las noches)</dd>
+
+                        <dt class="col-sm-4 mb-2">Gentilicio</dt>
+                        <dd class="col-sm-8 mb-2">Halloweeniano / halloweeniana</dd>
+
+                        <dt class="col-sm-4 mb-2">Habitantes</dt>
+                        <dd class="col-sm-8 mb-2">Monstruos, vampiros, licántropos, brujas, espectros, zombis y sombras</dd>
+
+                        <dt class="col-sm-4 mb-2">Clima</dt>
+                        <dd class="col-sm-8 mb-2">Fresco y nublado todo el año, con niebla espesa al anochecer</dd>
+
+                        <dt class="col-sm-4 mb-2">Moneda</dt>
+                        <dd class="col-sm-8 mb-2">Pumpkin Coins (🎃), con un valor de referencia equivalente al peso argentino</dd>
+
+                        <dt class="col-sm-4 mb-2">Fiesta favorita</dt>
+                        <dd class="col-sm-8 mb-2">La Navidad (aunque Halloween se celebra siempre)</dd>
+
+                        <dt class="col-sm-4 mb-2">Sector más misterioso</dt>
+                        <dd class="col-sm-8 mb-2">Hollow Bastion</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-3">
+
+        <!-- Historia -->
+        <section id="historia" class="container">
+            <h2>Nuestra historia</h2>
+            <article>
+                <p>
+                    Hace mucho tiempo, cuando apenas existían tres ciudades en el mundo, cada <strong>31 de octubre</strong>
+                    se celebraba un gran festejo en un inmenso jardín de calabazas. Durante esa noche, la energía pagana crecía
+                    sin detenerse hasta que, un día, todo ese poder se concentró en una sola calabaza.
+                    Al instante, esta cobró vida con una fuerza abrumadora y se alzó como el <strong>Rey Calabaza</strong>,
+                    uno de los seres más temidos y misteriosos que existen.
+                </p>
+                <p class="mt-3">
+                    Con su nuevo poder, se dirigió a un pequeño pueblo fantasma y lo transformó en una gran ciudad llena de vida:
+                    HalloweenTown. Su propósito era ofrecer un lugar donde aquellos monstruos que eran temidos y rechazados
+                    por otros pudieran encontrar aceptación y convivir con seres de su misma naturaleza.
+                    Poco a poco, distintas criaturas fantásticas acudieron al lugar y lo convirtieron en su hogar.
+                </p>
+                <p class="mt-3">
+                    Su nombre proviene de su característica cabeza con forma de calabaza, que terminó convirtiéndose también
+                    en el principal símbolo de la ciudad: su imagen está presente en numerosas decoraciones y representaciones.
+                    HalloweenTown no es solo un lugar de convivencia para los monstruos, sino también el legado de su fundador.
+                </p>
+            </article>
+        </section>
+
+        <hr class="my-3">
+
+        <!-- Barrios y sectores -->
+        <section id="barrios" class="container">
+            <h2>Barrios y sectores</h2>
+            <p>
+                HalloweenTown está dividida en sectores, igual que una gran ciudad como Nueva York.
+                Se reparten según las especies de monstruos que los habitan y lo que necesita cada una.
+            </p>
+
+            <article class="card fondo-oscurecido mt-4 mb-4">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="card-body">
+                            <span class="badge mb-2">Solo de noche</span>
+                            <h3 class="card-title fw-bold">Hollow Bastion</h3>
+                            <p class="card-text">
+                                Uno de nuestros sectores más particulares: durante el día permanece prácticamente deshabitado,
+                                hasta que llega la noche y aparecen sus habitantes, <strong>las sombras</strong>.
+                                Estas entidades carecen de un cuerpo físico definido y tienen una forma maleable,
+                                como la de una sombra convencional. Como la luz las vuelve vulnerables, se ocultan de día
+                                y desarrollan sus actividades durante la noche.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <article class="card h-100 fondo-oscurecido">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Barrio Caníbal</h3>
+                            <p class="card-text">
+                                Un barrio donde la gente se toma muy en serio eso de "comer bien". Ojo con los cables
+                                de luz: más de uno terminó en el menú.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 fondo-oscurecido">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Pantano de las Brujas</h3>
+                            <p class="card-text">
+                                Los monstruos acuáticos necesitan vivir cerca del agua, por eso se instalan junto a ríos
+                                y pantanos. Algunos incluso habitan en las fuentes de la propia ciudad.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 fondo-oscurecido">
+                        <div class="card-body">
+                            <span class="badge mb-2">Del Rey</span>
+                            <h3 class="card-title fw-bold">Barrio de la Calabaza</h3>
+                            <p class="card-text">
+                                Pertenece exclusivamente al Rey Calabaza, aunque cualquier ser que desee conocerlo
+                                puede visitarlo libremente.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <p class="mt-4">
+                ¿Querés ver más? Recorré los <a href="./lugares.html"><i class="link">lugares más espeluznantes</i></a>
+                de la ciudad.
+            </p>
+        </section>
+
+        <hr class="my-3">
+
+        <!-- Costumbres y datos curiosos -->
+        <section id="costumbres" class="container">
+            <h2>Costumbres y datos curiosos</h2>
+            <p class="mb-4">
+                Los habitantes celebran distintas festividades a lo largo del año, y la <strong>Navidad</strong>
+                es una de sus favoritas. Abrí cada dato para conocer un poco mejor nuestras costumbres.
+            </p>
+
+            <div class="accordion accordion-flush" id="datos-curiosos">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dato-1" aria-expanded="true" aria-controls="dato-1">
+                            Monstruosamente hospitalarios
+                        </button>
+                    </h3>
+                    <div id="dato-1" class="accordion-collapse collapse show" data-bs-parent="#datos-curiosos">
+                        <div class="accordion-body">
+                            A pesar de su apariencia aterradora y de que algunos pueden provocar accidentes,
+                            la mayoría de los residentes son amigables y hospitalarios. Suelen recibir a los visitantes
+                            con la misma amabilidad con la que el Rey Calabaza los ha tratado desde la fundación de la ciudad.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dato-2" aria-expanded="false" aria-controls="dato-2">
+                            Un Santa Claus muy particular
+                        </button>
+                    </h3>
+                    <div id="dato-2" class="accordion-collapse collapse" data-bs-parent="#datos-curiosos">
+                        <div class="accordion-body">
+                            El propio Rey Calabaza suele disfrazarse de una versión bastante particular de Santa Claus
+                            para repartir regalos por toda la ciudad, aunque sus obsequios pueden ser considerablemente
+                            más peligrosos que los del tradicional. Curiosamente, en la ciudad de Navidad ocurre lo contrario:
+                            durante octubre, la única festividad que se celebra es Halloween.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dato-3" aria-expanded="false" aria-controls="dato-3">
+                            Pumpkin Coins, la moneda oficial
+                        </button>
+                    </h3>
+                    <div id="dato-3" class="accordion-collapse collapse" data-bs-parent="#datos-curiosos">
+                        <div class="accordion-body">
+                            Su valor de referencia equivale al peso argentino y existen distintas denominaciones para facilitar
+                            las transacciones. También se pueden usar monedas de otros países, pero depende de cada
+                            establecimiento decidir si las acepta o no.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dato-4" aria-expanded="false" aria-controls="dato-4">
+                            Tres lugares que son del Rey
+                        </button>
+                    </h3>
+                    <div id="dato-4" class="accordion-collapse collapse" data-bs-parent="#datos-curiosos">
+                        <div class="accordion-body">
+                            Ningún otro habitante puede apropiarse de estos lugares, que pertenecen al Rey Calabaza:
+                            <ul class="mt-2">
+                                <li>Su castillo</li>
+                                <li>El Parque de las Calabazas</li>
+                                <li>El Barrio de la Calabaza</li>
+                            </ul>
+                            Aun así, los tres pueden ser visitados libremente por cualquier ser que desee conocerlos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <hr class="my-3">
+
+        <section id="visitanos" class="container text-center">
+            <h2>¿Te animás a visitarnos?</h2>
+            <a class="btn btn-form btn-lg m-1" href="./lugares.html">Ver los lugares</a>
+            <a class="btn btn-form btn-lg m-1" href="./contacto.html">Contactanos</a>
+        </section>
     </main>
-    <footer class="py-3 mb-4 text-center"> 
+
+    <footer class="py-3 mb-4 text-center">
         <p>
             <small>&copy; 1983 - 2026 Municipalidad de HalloweenTown. <br> Todos los derechos reservados.</small>
         </p>
