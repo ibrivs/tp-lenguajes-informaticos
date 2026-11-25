@@ -219,3 +219,16 @@ Rubik Burned
 Rubik Puddles
 Sixtyfour Convergence
 */
+/* carrusel de lugares (inicio.html) */
+.carousel-caption{
+    background-color: #0c0d11b3;
+    border-radius: 8px;
+    color: #fff7ee;
+    padding: 0.5rem 1rem;
+}
+.carousel-caption p{
+    font-size: 1rem;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--color-alerta);
+}
