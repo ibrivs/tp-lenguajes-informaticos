@@ -149,7 +149,10 @@ a{
 .accordion-body, .accordion-button, .accordion-button:focus{
     background-color: var(--color-main-oscuro);
 }
-
+.table{
+    --bs-table-bg: var(--color-main-claro);
+    --bs-table-border-color: none;
+}
 
 /* navbar */
 .navbar-halloween {
