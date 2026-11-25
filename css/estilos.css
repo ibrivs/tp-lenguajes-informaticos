@@ -1,13 +1,13 @@
 :root {
     --color-nav: #25256b;
     --color-nav-claro: #36366d;
-    --color-main-oscuro: #4b5a56;
-    --color-main-claro: #808d89;
-    --color-main: #556661;
+    --color-main-oscuro: #4b5657;
+    --color-main-claro: #728688;
+    --color-main: #556566;
     --color-fondo: #0c0d11;
     --color-alerta: #df3308;
-    --color-titulo: #ff7518;
-    --color-titulo-seccion: #ffa45e;
+    --color-titulo: #af5023de;
+    --color-titulo-seccion: #e07f4794;
 
     --fuente: "Griffy";
     --fuente-titulo: "Flavors";
@@ -15,9 +15,9 @@
 
     --borde: 2px solid var(--color-main);
 
-    --bs-secondary-rgb: #fff7ee85;
-    --bs-body-color: #fff7ee9c;
-    --bs-body-color-rgb: #fff7ee9c;
+    --bs-secondary-rgb: #eec08c85;
+    --bs-body-color: #eec08c85;
+    --bs-body-color-rgb: #eec08c85;
 }
 
 /* reset basico */
@@ -197,13 +197,13 @@ a{
 .light-mode{
     --color-nav: #96a5cf;
     --color-nav-claro: #9399b4;
-    --color-main-oscuro: #a9bbaf;
-    --color-main-claro: #e6fff3;
-    --color-main: #d6e8dc;
+    --color-main-oscuro: #a6bdad;
+    --color-main-claro: #d5e6dd;
+    --color-main: #c5ddcd;
     --color-fondo: #eaeff1;
     --color-alerta: #e7b836;
-    --color-titulo: #963b00;
-    --color-titulo-seccion: #8a3600;
+    --color-titulo: #94410acb;
+    --color-titulo-seccion: #a1470fce;
 
     --bs-secondary-rgb: #25256b;
     --bs-body-color: #0c0d11;
